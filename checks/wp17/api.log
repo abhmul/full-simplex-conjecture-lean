@@ -1,0 +1,20 @@
+checks/wp17/API.lean:5:7: error(lean.unknownIdentifier): Unknown constant `Fintype.embeddingOfCardLE`
+Function.invFun_surjective.{u_1, u_2} {α : Sort u_1} {β : Sort u_2} [Nonempty α] {f : α → β}
+  (hf : Function.Injective f) : Function.Surjective (Function.invFun f)
+Function.leftInverse_invFun.{u_1, u_2} {α : Sort u_1} {β : Sort u_2} [Nonempty α] {f : α → β}
+  (hf : Function.Injective f) : Function.LeftInverse (Function.invFun f) f
+checks/wp17/API.lean:8:7: error(lean.unknownIdentifier): Unknown identifier `Function.surjective_invFun`
+Equiv.sum_comp.{u_1, u_2, u_3} {ι : Type u_1} {κ : Type u_2} {M : Type u_3} [Fintype ι] [Fintype κ] [AddCommMonoid M]
+  (e : ι ≃ κ) (g : κ → M) : ∑ i, g (e i) = ∑ i, g i
+Fin.succAbove {n : ℕ} (p : Fin (n + 1)) (i : Fin n) : Fin (n + 1)
+Fin.succAbove_ne {n : ℕ} (p : Fin (n + 1)) (i : Fin n) : p.succAbove i ≠ p
+Fin.exists_succAbove_eq {n : ℕ} {x y : Fin (n + 1)} (h : x ≠ y) : ∃ z, y.succAbove z = x
+WeakSimplex.codeGram_isCorrelation {m n : ℕ} (code : Fin m → WeakSimplex.Coord n)
+  (hunit : ∀ (i : Fin m), ‖code i‖ = 1) : WeakSimplex.IsCorrelation (WeakSimplex.codeGram code)
+WeakSimplex.map_codeScore_stdGaussian {m n : ℕ} (code : Fin m → WeakSimplex.Coord n) :
+  MeasureTheory.Measure.map (fun y => WeakSimplex.Coord.ofFun fun i => inner ℝ (code i) y)
+      (ProbabilityTheory.stdGaussian (WeakSimplex.Coord n)) =
+    ProbabilityTheory.multivariateGaussian 0 (WeakSimplex.codeGram code)
+HasFDerivAt.comp_hasDerivAt.{u, v, w} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {F : Type v} [NormedAddCommGroup F]
+  [NormedSpace 𝕜 F] {E : Type w} [NormedAddCommGroup E] [NormedSpace 𝕜 E] {f : 𝕜 → F} {f' : F} (x : 𝕜) {l : F → E}
+  {l' : F →L[𝕜] E} (hl : HasFDerivAt l l' (f x)) (hf : HasDerivAt f f' x) : HasDerivAt (l ∘ f) (l' f') x

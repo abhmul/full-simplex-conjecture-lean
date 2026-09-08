@@ -114,8 +114,8 @@
         "FSC/Gaussian/ConditionalCaps.lean",
         "FSC/Gaussian/ThresholdExpansion.lean"
       ],
-      "status": "in-progress",
-      "owner": "analytic_preflight"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP08",
@@ -141,8 +141,8 @@
         "FSC/Gaussian/NormalizedAddition.lean",
         "FSC/Analysis/FeasibleVariation.lean"
       ],
-      "status": "in-progress",
-      "owner": "analytic_preflight"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP10",
@@ -220,14 +220,15 @@
       "title": "Finite row tests and signed loss rigidity",
       "dependencies": [
         "WP04",
-        "WP09"
+        "WP09",
+        "WP21"
       ],
       "owned_files": [
         "FSC/Minimizers/FiniteDirections.lean",
         "FSC/Scalar/RowLoss.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "wp00_algebra"
     },
     {
       "id": "WP16",
@@ -240,7 +241,9 @@
       ],
       "owned_files": [
         "FSC/Facet/Compatibility.lean",
-        "FSC/Gaussian/SubspaceGaussian.lean"
+        "FSC/Facet/PaddedNormals.lean",
+        "FSC/Gaussian/SubspaceGaussian.lean",
+        "FSC/Support/GramInvariance.lean"
       ],
       "status": "in-progress",
       "owner": "wp00_imports"
@@ -251,12 +254,14 @@
       "dependencies": [
         "WP02",
         "WP03",
-        "WP05"
+        "WP05",
+        "WP07",
+        "WP21"
       ],
       "owned_files": [
         "FSC/Simplex/Recursion.lean"
       ],
-      "status": "in-progress",
+      "status": "integrated",
       "owner": "root"
     },
     {
@@ -265,13 +270,16 @@
       "dependencies": [
         "WP04",
         "WP09",
-        "WP13"
+        "WP13",
+        "WP15",
+        "WP21"
       ],
       "owned_files": [
-        "FSC/Minimizers/Exclusions.lean"
+        "FSC/Minimizers/Exclusions.lean",
+        "FSC/Gaussian/Replacement.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "root"
     },
     {
       "id": "WP19",
@@ -287,8 +295,8 @@
       "owned_files": [
         "FSC/Minimizers/SlopeRigidity.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "analytic_preflight"
     },
     {
       "id": "WP20",
@@ -312,8 +320,8 @@
         "FSC/Simplex/Definitions.lean",
         "FSC/Simplex/BaseCases.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_algebra"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP22",
@@ -327,8 +335,8 @@
       "owned_files": [
         "FSC/Comparison.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "root"
     },
     {
       "id": "WP23",
@@ -341,8 +349,8 @@
       "owned_files": [
         "FSC/Equality.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "wp00_algebra"
     },
     {
       "id": "WP24",
@@ -352,10 +360,11 @@
         "WP23"
       ],
       "owned_files": [
-        "FSC/Main.lean"
+        "FSC/Main.lean",
+        "FSC/Gaussian/Maximum.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "wp00_imports"
     },
     {
       "id": "WP25",

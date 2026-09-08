@@ -7,6 +7,7 @@ import FSC.Gaussian.PairLaw
 import FSC.Gaussian.PairWeights
 import FSC.Gaussian.NormalizedAddition
 import FSC.Gaussian.CDFContinuity
+import FSC.Gaussian.ThresholdExpansion
 import FSC.LinearAlgebra.Gram
 import FSC.LinearAlgebra.PaddedGram
 import FSC.Compactness
@@ -22,6 +23,8 @@ import FSC.Analysis.PartialDerivatives
 import FSC.Analysis.FinitePartialDerivatives
 import FSC.Analysis.PeanoTaylor
 import FSC.Scalar.Componentwise
+import FSC.Simplex.BaseCases
+import FSC.Simplex.Recursion
 import FSC.Threshold.LinearBarrier
 
 /- Accepted foundations and generic theorems only. The all-dimensional FSC comparison

@@ -2,7 +2,7 @@
 
 The initial graph had 26 packages (WP00–WP25). Actual importing consumers justified extracting the generic input-coordinate calculus (WP26) and vector-domain Peano bridge (WP27), so the concrete singular probe could close before universal threshold calculus. The count is neither a quota nor a limit. Refine package size when compiler evidence warrants it; preserve mathematical contracts and record changed dependencies.
 
-Status: WP00–WP06, WP08, WP10–WP14, WP20, WP26 and WP27 have reviewed, freshly audited implementations integrated by the lead. The singular probe includes the actual rank-increasing normalized-addition derivative. WP09 has an accepted actual normalized-addition law and a reviewed derivative assembly with explicit Peano/Hessian inputs, still unpaid universally. WP07 threshold expansion, WP16 facet compatibility, WP17 simplex recursion and WP21 base cases are active in disjoint owned files. Dependencies indicate required proof inputs, not a prohibition on developing against an explicit conditional interface. See cards and IMPLEMENTATION_LOG.md; no final FSC theorem is certified yet.
+Status: WP00–WP14, WP17, WP20, WP21, WP26 and WP27 have reviewed, freshly audited implementations integrated by the lead. This includes the universal actual normalized PSD-addition derivative with Peano/Hessian inputs discharged, and the earlier independent singular triangle certificate. WP15 finite tests/row rigidity, WP16 physical facet compatibility and WP18 minimizer exclusions have compiled and are undergoing package acceptance. WP19 slope comparison and the final comparison/equality/wrapper assemblies are active next. Dependencies indicate required proof inputs, not a prohibition on developing against an explicit conditional interface. See cards and IMPLEMENTATION_LOG.md; no final FSC theorem is certified yet.
 
 | Package | Responsibility | Dependencies |
 | --- | --- | --- |
@@ -21,10 +21,10 @@ Status: WP00–WP06, WP08, WP10–WP14, WP20, WP26 and WP27 have reviewed, fresh
 | [WP12](work-packages/WP12.md) | Singular rank-padded Gram and tangent realization | WP02 |
 | [WP13](work-packages/WP13.md) | All-correlation CDF continuity and compactness | WP02, WP04 |
 | [WP14](work-packages/WP14.md) | Componentwise scalar comparison and equality | WP01 |
-| [WP15](work-packages/WP15.md) | Finite row tests and signed loss rigidity | WP04, WP09 |
+| [WP15](work-packages/WP15.md) | Finite row tests and signed loss rigidity | WP04, WP09, WP21 |
 | [WP16](work-packages/WP16.md) | Facet compatibility and padded component identities | WP04, WP05, WP11, WP12 |
-| [WP17](work-packages/WP17.md) | Simplex conditional recursion and repeated-direction reference | WP02, WP03, WP05 |
-| [WP18](work-packages/WP18.md) | Duplicate and positive-definite exclusions | WP04, WP09, WP13 |
+| [WP17](work-packages/WP17.md) | Simplex conditional recursion and repeated-direction reference | WP02, WP03, WP05, WP07, WP21 |
+| [WP18](work-packages/WP18.md) | Duplicate and positive-definite exclusions | WP04, WP09, WP13, WP15, WP21 |
 | [WP19](work-packages/WP19.md) | Minimizer slope comparison and rigidity | WP06, WP14, WP15, WP16, WP17, WP18 |
 | [WP20](work-packages/WP20.md) | Abstract compact strict barrier | WP01 |
 | [WP21](work-packages/WP21.md) | Two-site base and nonpositive thresholds | WP02 |

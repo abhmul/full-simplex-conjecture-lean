@@ -1,0 +1,14 @@
+FSC/Simplex/Recursion.lean:23:36: error: Application type mismatch: The argument
+  h
+has type
+  e i = e j
+but is expected to have type
+  (Fintype.equivFin ι) i = (Fintype.equivFin ι) j
+in the application
+  congrArg Fin.val h
+FSC/Simplex/Recursion.lean:30:2: error: Type mismatch
+  Function.Surjective.forall hf
+has type
+  (∀ (y : ι), ?m.24 y) ↔ ∀ (x : κ), ?m.24 (f x)
+but is expected to have type
+  y ∈ cap (w ∘ f) (b ∘ f) ↔ y ∈ cap w b

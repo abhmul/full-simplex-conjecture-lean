@@ -45,6 +45,23 @@ import FSC
 #print axioms FSC.gaussian_frontier_thresholdEvent_null
 #print axioms FSC.continuous_cdf_on_correlations
 #print axioms FSC.exists_cdf_minimizer
+#print axioms FSC.map_gramPairSlice_pairLaw
+#print axioms FSC.q_eq_projected_slice
+#print axioms FSC.peano2_thresholdCDF
+#print axioms FSC.thresholdHessian_apply
+#print axioms FSC.hasDerivWithinAt_normalizedAdd
+#print axioms FSC.hasDerivAt_cdf
+#print axioms FSC.simplex_isCorrelation
+#print axioms FSC.simplex_cdf_nonpos
+#print axioms FSC.two_site_compare
+#print axioms FSC.two_site_equality
+#print axioms FSC.map_simplex_singleLaw
+#print axioms FSC.hasDerivAt_simplex_cdf
+#print axioms FSC.exists_correlation_capMass
+#print axioms FSC.reference_floor_of_comparison
 
 set_option pp.all true in
 #check FSC.Peano2.hasDerivWithinAt_noiseAverage
+
+set_option pp.all true in
+#check FSC.hasDerivWithinAt_normalizedAdd
