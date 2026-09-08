@@ -2,7 +2,7 @@
 
 The initial graph had 26 packages (WP00–WP25). Actual importing consumers justified extracting the generic input-coordinate calculus (WP26) and vector-domain Peano bridge (WP27), so the concrete singular probe could close before universal threshold calculus. The count is neither a quota nor a limit. Refine package size when compiler evidence warrants it; preserve mathematical contracts and record changed dependencies.
 
-Status: WP00–WP04, WP08, WP10, WP11, WP14, WP20, WP26 and WP27 have reviewed, freshly audited implementations integrated by the lead. The singular probe includes the actual rank-increasing normalized-addition derivative. WP05 actual support C1, WP06 support tangent, WP09 universal variation infrastructure and WP13 continuity/compactness are active in disjoint owned files. Dependencies indicate required proof inputs, not a prohibition on developing against an explicit conditional interface. See cards and IMPLEMENTATION_LOG.md; no final FSC theorem is certified yet.
+Status: WP00–WP06, WP08, WP10–WP14, WP20, WP26 and WP27 have reviewed, freshly audited implementations integrated by the lead. The singular probe includes the actual rank-increasing normalized-addition derivative. WP09 has an accepted actual normalized-addition law and a reviewed derivative assembly with explicit Peano/Hessian inputs, still unpaid universally. WP07 threshold expansion, WP16 facet compatibility, WP17 simplex recursion and WP21 base cases are active in disjoint owned files. Dependencies indicate required proof inputs, not a prohibition on developing against an explicit conditional interface. See cards and IMPLEMENTATION_LOG.md; no final FSC theorem is certified yet.
 
 | Package | Responsibility | Dependencies |
 | --- | --- | --- |
@@ -12,7 +12,7 @@ Status: WP00–WP04, WP08, WP10, WP11, WP14, WP20, WP26 and WP27 have reviewed, 
 | [WP03](work-packages/WP03.md) | Canonical one-pin law | WP02 |
 | [WP04](work-packages/WP04.md) | Canonical pair law, weights and general row positivity | WP03 |
 | [WP05](work-packages/WP05.md) | Finite Gaussian support C1 neighborhoods | WP03, WP26 |
-| [WP06](work-packages/WP06.md) | Support quadratic tangent from Prekopa | WP01, WP11 |
+| [WP06](work-packages/WP06.md) | Support quadratic tangent from Prekopa | WP01, WP05, WP11 |
 | [WP07](work-packages/WP07.md) | Threshold Hessian and Peano expansion | WP04, WP05, WP27 |
 | [WP08](work-packages/WP08.md) | Bounded finite-second-moment noise averaging | WP01 |
 | [WP09](work-packages/WP09.md) | Universal normalized PSD-addition derivative | WP02, WP07, WP08 |

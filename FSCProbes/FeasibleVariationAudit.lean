@@ -1,0 +1,27 @@
+import FSC.Analysis.FeasibleVariation
+
+#check FSC.normalizedAdd_isCorrelation
+#check FSC.map_normalizedAddition
+#check FSC.cdf_normalizedAdd_eq_noiseAverage
+#check FSC.hasDerivAt_normalizationShift_zero
+#check FSC.integral_bilinear_multivariateGaussian
+#check FSC.Peano2.hasDerivWithinAt_cdf_normalizedAdd
+#check FSC.Peano2.hasDerivWithinAt_cdf_normalizedAdd_of_hessian
+
+#print axioms FSC.normalizingDiagonal_cov
+#print axioms FSC.normalizedAdd_isCorrelation
+#print axioms FSC.normalizedAdd_zero
+#print axioms FSC.map_sub_sqrt_smul_multivariateGaussian
+#print axioms FSC.map_normalizedAddition
+#print axioms FSC.normalizedAddition_event
+#print axioms FSC.cdf_normalizedAdd_eq_noiseAverage
+#print axioms FSC.hasDerivAt_normalizationShift_zero
+#print axioms FSC.integrable_sq_norm_multivariateGaussian
+#print axioms FSC.integral_eval_multivariateGaussian_zero
+#print axioms FSC.integrable_eval_mul_multivariateGaussian
+#print axioms FSC.integral_eval_mul_multivariateGaussian
+#print axioms FSC.integral_bilinear_multivariateGaussian
+#print axioms FSC.Peano2.hasDerivWithinAt_cdf_normalizedAdd
+#print axioms FSC.apply_normalizationVelocity
+#print axioms FSC.sum_mul_covariance_eq_trace
+#print axioms FSC.Peano2.hasDerivWithinAt_cdf_normalizedAdd_of_hessian

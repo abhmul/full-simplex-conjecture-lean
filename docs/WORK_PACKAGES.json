@@ -84,20 +84,21 @@
         "FSC/Support/Differentiation.lean",
         "FSC/Support/Slicing.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_imports"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP06",
       "title": "Support quadratic tangent from Prekopa",
       "dependencies": [
         "WP01",
+        "WP05",
         "WP11"
       ],
       "owned_files": [
         "FSC/Support/QuadraticTangent.lean"
       ],
-      "status": "in-progress",
+      "status": "integrated",
       "owner": "root"
     },
     {
@@ -109,11 +110,12 @@
         "WP27"
       ],
       "owned_files": [
-        "FSC/Gaussian/ThresholdExpansion.lean",
-        "FSC/Analysis/Peano.lean"
+        "FSC/Gaussian/ProjectedNormals.lean",
+        "FSC/Gaussian/ConditionalCaps.lean",
+        "FSC/Gaussian/ThresholdExpansion.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "analytic_preflight"
     },
     {
       "id": "WP08",
@@ -184,8 +186,8 @@
       "owned_files": [
         "FSC/LinearAlgebra/PaddedGram.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP13",
@@ -198,8 +200,8 @@
         "FSC/Gaussian/CDFContinuity.lean",
         "FSC/Compactness.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_algebra"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP14",
@@ -237,10 +239,11 @@
         "WP12"
       ],
       "owned_files": [
-        "FSC/Facet/Compatibility.lean"
+        "FSC/Facet/Compatibility.lean",
+        "FSC/Gaussian/SubspaceGaussian.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "wp00_imports"
     },
     {
       "id": "WP17",
@@ -253,8 +256,8 @@
       "owned_files": [
         "FSC/Simplex/Recursion.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "root"
     },
     {
       "id": "WP18",
@@ -306,10 +309,11 @@
         "WP02"
       ],
       "owned_files": [
+        "FSC/Simplex/Definitions.lean",
         "FSC/Simplex/BaseCases.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "wp00_algebra"
     },
     {
       "id": "WP22",
@@ -371,7 +375,9 @@
     {
       "id": "WP26",
       "title": "Product and finite-input partial derivative adapters",
-      "dependencies": ["WP01"],
+      "dependencies": [
+        "WP01"
+      ],
       "owned_files": [
         "FSC/Analysis/PartialDerivatives.lean",
         "FSC/Analysis/FinitePartialDerivatives.lean"
@@ -382,8 +388,12 @@
     {
       "id": "WP27",
       "title": "Vector-domain derivative-to-Peano bridge",
-      "dependencies": ["WP01"],
-      "owned_files": ["FSC/Analysis/PeanoTaylor.lean"],
+      "dependencies": [
+        "WP01"
+      ],
+      "owned_files": [
+        "FSC/Analysis/PeanoTaylor.lean"
+      ],
       "status": "integrated",
       "owner": "root"
     }

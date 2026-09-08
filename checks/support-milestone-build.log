@@ -1,0 +1,179 @@
+ℹ [3794/3798] Replayed FSCProbes.Imports
+info: FSCProbes/Imports.lean:18:0: WeakSimplex.IsCorrelation {m : ℕ} (R : Matrix (Fin m) (Fin m) ℝ) : Prop
+info: FSCProbes/Imports.lean:19:0: WeakSimplex.Coord (m : ℕ) : Type
+info: FSCProbes/Imports.lean:20:0: WeakSimplex.lowerOrthant {m : ℕ} (c : ℝ) : Set (WeakSimplex.Coord m)
+info: FSCProbes/Imports.lean:21:0: WeakSimplex.measurableSet_lowerOrthant {m : ℕ} (c : ℝ) : MeasurableSet (WeakSimplex.lowerOrthant c)
+info: FSCProbes/Imports.lean:22:0: WeakSimplex.regularSimplexGram (m : ℕ) : Matrix (Fin m) (Fin m) ℝ
+info: FSCProbes/Imports.lean:23:0: WeakSimplex.gramNormalization {m : ℕ} (hm : 1 < m) (G : Matrix (Fin m) (Fin m) ℝ) (hG : WeakSimplex.IsCorrelation G) :
+  WeakSimplex.IsWeakSimplexCov (((↑m - 1) / ↑m) • G + (1 / ↑m) • WeakSimplex.allOnesMatrix m) ∧
+    WeakSimplex.IsCorrelation (WeakSimplex.regularSimplexGram m) ∧
+      ((↑m - 1) / ↑m) • WeakSimplex.regularSimplexGram m + (1 / ↑m) • WeakSimplex.allOnesMatrix m = 1
+info: FSCProbes/Imports.lean:24:0: WeakSimplex.map_codeScore_stdGaussian {m n : ℕ} (code : Fin m → WeakSimplex.Coord n) :
+  MeasureTheory.Measure.map (fun y => WeakSimplex.Coord.ofFun fun i => inner ℝ (code i) y)
+      (ProbabilityTheory.stdGaussian (WeakSimplex.Coord n)) =
+    ProbabilityTheory.multivariateGaussian 0 (WeakSimplex.codeGram code)
+info: FSCProbes/Imports.lean:25:0: WeakSimplex.normalPDF_pos (x : ℝ) : 0 < WeakSimplex.normalPDF x
+info: FSCProbes/Imports.lean:26:0: WeakSimplex.hasDerivAt_normalPDF (x : ℝ) : HasDerivAt WeakSimplex.normalPDF (-x * WeakSimplex.normalPDF x) x
+info: FSCProbes/Imports.lean:27:0: WeakSimplex.hasDerivAt_normalCDF (x : ℝ) : HasDerivAt WeakSimplex.normalCDF (WeakSimplex.normalPDF x) x
+info: FSCProbes/Imports.lean:28:0: WeakSimplex.truncated_second_moment (s : ℝ) :
+  ∫ (x : ℝ) in Set.Iic s, x ^ 2 * WeakSimplex.normalPDF x = WeakSimplex.normalCDF s - s * WeakSimplex.normalPDF s
+info: FSCProbes/Imports.lean:29:0: WeakSimplex.isLogConcave_lintegral_right.{u, v} {E : Type u} {ι : Type v} [AddCommMonoid E] [Module ℝ E] [Fintype ι]
+  {F : E → (ι → ℝ) → ENNReal} (hF_meas : ∀ (x : E), Measurable (F x))
+  (hF_lc : WeakSimplex.IsLogConcave fun p => F p.1 p.2) : WeakSimplex.IsLogConcave fun x => ∫⁻ (y : ι → ℝ), F x y
+info: FSCProbes/Imports.lean:30:0: WeakSimplex.measurable_isLogConcave_lintegral_right.{u, v} {E : Type u} {ι : Type v} [MeasurableSpace E]
+  [AddCommMonoid E] [Module ℝ E] [Fintype ι] {F : E → (ι → ℝ) → ENNReal} (hF_meas : Measurable (Function.uncurry F))
+  (hF_lc : WeakSimplex.IsLogConcave fun p => F p.1 p.2) :
+  (Measurable fun x => ∫⁻ (y : ι → ℝ), F x y) ∧ WeakSimplex.IsLogConcave fun x => ∫⁻ (y : ι → ℝ), F x y
+info: FSCProbes/Imports.lean:31:0: WeakSimplex.map_gaussianRegularization_eq_multivariateGaussian {m : ℕ} (R : Matrix (Fin m) (Fin m) ℝ)
+  (hR : R.PosSemidef) (ε : ℝ) (hε₀ : 0 ≤ ε) (hε₁ : ε ≤ 1) :
+  MeasureTheory.Measure.map (WeakSimplex.gaussianRegularizationMap ε)
+      ((ProbabilityTheory.multivariateGaussian 0 R).prod (ProbabilityTheory.stdGaussian (WeakSimplex.Coord m))) =
+    ProbabilityTheory.multivariateGaussian 0 ((1 - ε) • R + ε • 1)
+info: FSCProbes/Imports.lean:32:0: WeakSimplex.tendstoInDistribution_regularized_multivariateGaussian {m : ℕ} (R : Matrix (Fin m) (Fin m) ℝ)
+  (hR : R.PosSemidef) :
+  MeasureTheory.TendstoInDistribution (fun x => id) Filter.atTop id
+    (fun n => ProbabilityTheory.multivariateGaussian 0 ((1 - (1 / 2) ^ (n + 1)) • R + (1 / 2) ^ (n + 1) • 1))
+    (ProbabilityTheory.multivariateGaussian 0 R)
+info: FSCProbes/Imports.lean:33:0: ProbabilityTheory.multivariateGaussian.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (μ : EuclideanSpace ℝ ι)
+  (S : Matrix ι ι ℝ) : MeasureTheory.Measure (EuclideanSpace ℝ ι)
+info: FSCProbes/Imports.lean:34:0: ProbabilityTheory.multivariateGaussian_of_not_posSemidef.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (μ : EuclideanSpace ℝ ι) {S : Matrix ι ι ℝ} (hS : ¬S.PosSemidef) :
+  ProbabilityTheory.multivariateGaussian μ S = MeasureTheory.Measure.dirac μ
+info: FSCProbes/Imports.lean:35:0: ProbabilityTheory.IsGaussian.ext.{u_1} {E : Type u_1} [NormedAddCommGroup E] [SecondCountableTopology E]
+  [CompleteSpace E] [MeasurableSpace E] [BorelSpace E] {μ : MeasureTheory.Measure E} [InnerProductSpace ℝ E]
+  {ν : MeasureTheory.Measure E} [ProbabilityTheory.IsGaussian μ] [ProbabilityTheory.IsGaussian ν]
+  (hm : ∫ (x : E), id x ∂μ = ∫ (x : E), id x ∂ν)
+  (hv : ProbabilityTheory.covarianceBilin μ = ProbabilityTheory.covarianceBilin ν) : μ = ν
+info: FSCProbes/Imports.lean:36:0: ProbabilityTheory.HasGaussianLaw.indepFun_of_covariance_eval.{u_1, u_4, u_5} {Ω : Type u_1} {mΩ : MeasurableSpace Ω}
+  {P : MeasureTheory.Measure Ω} {ι : Type u_4} {κ : Type u_5} [Finite ι] [Finite κ] {X : ι → Ω → ℝ} {Y : κ → Ω → ℝ}
+  (hXY : ProbabilityTheory.HasGaussianLaw (fun ω => (fun i => X i ω, fun j => Y j ω)) P)
+  (h : ∀ (i : ι) (j : κ), ProbabilityTheory.covariance (X i) (Y j) P = 0) :
+  ProbabilityTheory.IndepFun (fun ω i => X i ω) (fun ω j => Y j ω) P
+info: FSCProbes/Imports.lean:37:0: ProbabilityTheory.measurePreserving_eval_multivariateGaussian.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  {μ : EuclideanSpace ℝ ι} {S : Matrix ι ι ℝ} (hS : S.PosSemidef) {i : ι} :
+  MeasureTheory.MeasurePreserving (fun x => x.ofLp i) (ProbabilityTheory.multivariateGaussian μ S)
+    (ProbabilityTheory.gaussianReal (μ.ofLp i) (S i i).toNNReal)
+info: FSCProbes/Imports.lean:38:0: MeasureTheory.ProbabilityMeasure.tendsto_of_tendsto_charFun.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E]
+  {μ₀ : MeasureTheory.ProbabilityMeasure E} {μ : ℕ → MeasureTheory.ProbabilityMeasure E}
+  (h :
+    ∀ (t : E),
+      Filter.Tendsto (fun n => MeasureTheory.charFun (↑(μ n)) t) Filter.atTop (nhds (MeasureTheory.charFun (↑μ₀) t))) :
+  Filter.Tendsto μ Filter.atTop (nhds μ₀)
+info: FSCProbes/Imports.lean:39:0: MeasureTheory.ProbabilityMeasure.tendsto_measure_of_null_frontier_of_tendsto'.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2}
+  {L : Filter ι} [MeasurableSpace Ω] [TopologicalSpace Ω] [OpensMeasurableSpace Ω] [HasOuterApproxClosed Ω]
+  {μ : MeasureTheory.ProbabilityMeasure Ω} {μs : ι → MeasureTheory.ProbabilityMeasure Ω}
+  (μs_lim : Filter.Tendsto μs L (nhds μ)) {E : Set Ω} (E_nullbdry : ↑μ (frontier E) = 0) :
+  Filter.Tendsto (fun i => ↑(μs i) E) L (nhds (↑μ E))
+info: FSCProbes/Imports.lean:40:0: MeasureTheory.Measure.integral_comp_smul.{u_1, u_2} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E]
+  [MeasurableSpace E] [BorelSpace E] [FiniteDimensional ℝ E] (μ : MeasureTheory.Measure E) [μ.IsAddHaarMeasure]
+  {F : Type u_2} [NormedAddCommGroup F] [NormedSpace ℝ F] (f : E → F) (R : ℝ) :
+  ∫ (x : E), f (R • x) ∂μ = |(R ^ Module.finrank ℝ E)⁻¹| • ∫ (x : E), f x ∂μ
+info: FSCProbes/Imports.lean:41:0: hasDerivAt_integral_of_dominated_loc_of_deriv_le.{u_1, u_2, u_3} {α : Type u_1} [MeasurableSpace α]
+  {μ : MeasureTheory.Measure α} {𝕜 : Type u_2} [RCLike 𝕜] {E : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E]
+  [NormedSpace 𝕜 E] {bound : α → ℝ} {F : 𝕜 → α → E} {x₀ : 𝕜} {s : Set 𝕜} (hs : s ∈ nhds x₀)
+  (hF_meas : ∀ᶠ (x : 𝕜) in nhds x₀, MeasureTheory.AEStronglyMeasurable (F x) μ)
+  (hF_int : MeasureTheory.Integrable (F x₀) μ) {F' : 𝕜 → α → E}
+  (hF'_meas : MeasureTheory.AEStronglyMeasurable (F' x₀) μ) (h_bound : ∀ᵐ (a : α) ∂μ, ∀ x ∈ s, ‖F' x a‖ ≤ bound a)
+  (bound_integrable : MeasureTheory.Integrable bound μ)
+  (h_diff : ∀ᵐ (a : α) ∂μ, ∀ x ∈ s, HasDerivAt (fun x => F x a) (F' x a) x) :
+  MeasureTheory.Integrable (F' x₀) μ ∧ HasDerivAt (fun n => ∫ (a : α), F n a ∂μ) (∫ (a : α), F' x₀ a ∂μ) x₀
+info: FSCProbes/Imports.lean:42:0: Matrix.PosDef.fromBlocks₁₁.{u_1, u_2, u_4} {m : Type u_1} {n : Type u_2} {R' : Type u_4} [CommRing R'] [PartialOrder R']
+  [StarRing R'] [Fintype m] [StarOrderedRing R'] [Finite n] [DecidableEq m] {A : Matrix m m R'} (B : Matrix m n R')
+  (D : Matrix n n R') (hA : A.PosDef) [Invertible A] :
+  (Matrix.fromBlocks A B B.conjTranspose D).PosSemidef ↔ (D - B.conjTranspose * A⁻¹ * B).PosSemidef
+info: FSCProbes/Imports.lean:127:0: theorem FSCProbes.Imports.gram_lowerOrthant : ∀ {m d : ℕ} (code : Fin m → Coord d) (t : ℝ),
+  (multivariateGaussian 0 (codeGram code)) (lowerOrthant t) =
+    (stdGaussian (Coord d)) {y | ∀ (i : Fin m), ⟪code i, y⟫_ℝ ≤ t} :=
+fun {m d} code t =>
+  Eq.mpr
+    (id
+      (congrArg (fun _a => _a (lowerOrthant t) = (stdGaussian (Coord d)) {y | ∀ (i : Fin m), ⟪code i, y⟫_ℝ ≤ t})
+        (Eq.symm (map_codeScore_stdGaussian code))))
+    (Eq.mpr
+      (id
+        (congrArg (fun _a => _a = (stdGaussian (Coord d)) {y | ∀ (i : Fin m), ⟪code i, y⟫_ℝ ≤ t})
+          (Measure.map_apply
+            (id
+              (Measurable.fun_comp (WithLp.measurable_toLp 2 (Fin m → ℝ))
+                (measurable_pi_lambda (fun y i => ⟪code i, y⟫_ℝ) fun a =>
+                  Continuous.measurable (Continuous.inner continuous_const continuous_id'))))
+            (measurableSet_lowerOrthant t))))
+      (Eq.refl ((stdGaussian (Coord d)) ((fun y => Coord.ofFun fun i => ⟪code i, y⟫_ℝ) ⁻¹' lowerOrthant t))))
+info: FSCProbes/Imports.lean:128:0: theorem FSCProbes.Imports.joint_linear_image_factorization : ∀ {d m k : ℕ} (G : Matrix (Fin d) (Fin d) ℝ)
+  (A : Coord d →L[ℝ] Fin m → ℝ) (B : Coord d →L[ℝ] Fin k → ℝ),
+  (∀ (i : Fin m) (j : Fin k), cov[fun x => A x i, fun x => B x j; multivariateGaussian 0 G] = 0) →
+    Measure.map (fun x => (A x, B x)) (multivariateGaussian 0 G) =
+      (Measure.map (⇑A) (multivariateGaussian 0 G)).prod (Measure.map (⇑B) (multivariateGaussian 0 G)) :=
+fun {d m k} G A B hcross =>
+  have hjoint := HasGaussianLaw.map IsGaussian.hasGaussianLaw_id (A.prod B);
+  have hindep := HasGaussianLaw.indepFun_of_covariance_eval hjoint hcross;
+  IndepFun.map_prod_eq_prod_map_map (Measurable.aemeasurable (ContinuousLinearMap.measurable A))
+    (Measurable.aemeasurable (ContinuousLinearMap.measurable B)) hindep
+info: FSCProbes/Imports.lean:129:0: theorem FSCProbes.Imports.affine_image_isGaussian : ∀ {d m : ℕ} (G : Matrix (Fin d) (Fin d) ℝ)
+  (A : Coord d →L[ℝ] Coord m) (b : Coord m), IsGaussian (Measure.map (fun x => A x + b) (multivariateGaussian 0 G)) :=
+fun {d m} G A b =>
+  have hmap :=
+    Eq.mpr
+      (id
+        (congrArg (fun _a => _a = Measure.map (fun x => A x + b) (multivariateGaussian 0 G))
+          (Measure.map_map (Measurable.add_const measurable_id' b) (ContinuousLinearMap.measurable A))))
+      (Eq.refl (Measure.map ((fun y => y + b) ∘ ⇑A) (multivariateGaussian 0 G)));
+  Eq.mpr (id (congrArg (fun _a => IsGaussian _a) (Eq.symm hmap))) inferInstance
+info: FSCProbes/Imports.lean:130:0: theorem FSCProbes.Imports.convex_support_marginal : ∀ {m d : ℕ} (s : Set ((Fin m → ℝ) × (Fin d → ℝ))),
+  MeasurableSet s →
+    Convex ℝ s →
+      (Measurable fun r => ∫⁻ (y : Fin d → ℝ), convexIndicator s (r, y)) ∧
+        IsLogConcave fun r => ∫⁻ (y : Fin d → ℝ), convexIndicator s (r, y) :=
+fun {m d} s hs hc =>
+  measurable_isLogConcave_lintegral_right (measurable_convexIndicator hs) (isLogConcave_convexIndicator hc)
+info: FSCProbes/Imports.lean:131:0: theorem FSCProbes.Imports.schur_complement_posSemidef : ∀ {m d : ℕ} (A : Matrix (Fin m) (Fin m) ℝ)
+  (B : Matrix (Fin m) (Fin d) ℝ) (D : Matrix (Fin d) (Fin d) ℝ),
+  A.PosDef →
+    ∀ [Invertible A],
+      (Matrix.fromBlocks A B B.conjTranspose D).PosSemidef → (D - B.conjTranspose * A⁻¹ * B).PosSemidef :=
+fun {m d} A B D hA [Invertible A] hblock => (Matrix.PosDef.fromBlocks₁₁ B D hA).mp hblock
+info: FSCProbes/Imports.lean:132:0: theorem FSCProbes.Imports.haar_scaling : ∀ {d : ℕ} (f : (Fin d → ℝ) → ℝ) (r : ℝ),
+  ∫ (x : Fin d → ℝ), f (r • x) = |(r ^ d)⁻¹| * ∫ (x : Fin d → ℝ), f x :=
+fun {d} f r =>
+  Eq.mpr
+    (id
+      (congrArg (Eq (∫ (x : Fin d → ℝ), f (r • x)))
+        (congrFun' (congrArg HMul.hMul (Eq.trans (abs_inv (r ^ d)) (congrArg Inv.inv (abs_pow r d))))
+          (∫ (x : Fin d → ℝ), f x))))
+    (Eq.mp
+      (congrArg (Eq (∫ (x : Fin d → ℝ), f (r • x)))
+        (congrFun'
+          (congrArg HSMul.hSMul
+            (Eq.trans
+              (Eq.trans
+                (congrArg abs
+                  (congrArg Inv.inv
+                    (congrArg (HPow.hPow r) (Eq.trans (Module.finrank_fintype_fun_eq_card ℝ) (Fintype.card_fin d)))))
+                (abs_inv (r ^ d)))
+              (congrArg Inv.inv (abs_pow r d))))
+          (∫ (x : Fin d → ℝ), f x)))
+      (Measure.integral_comp_smul ℙ f r))
+info: FSCProbes/Imports.lean:133:0: theorem FSCProbes.Imports.hasDerivAt_integral_mul.{u_1} : ∀ {α : Type u_1} [inst : MeasurableSpace α] (μ : Measure α)
+  (f : α → ℝ), Integrable f μ → ∀ (x₀ : ℝ), HasDerivAt (fun x => ∫ (a : α), x * f a ∂μ) (∫ (a : α), f a ∂μ) x₀ :=
+fun {α} [MeasurableSpace α] μ f hf x₀ =>
+  have h :=
+    hasDerivAt_integral_of_dominated_loc_of_deriv_le univ_mem
+      (Eventually.of_forall fun x => Integrable.aestronglyMeasurable (Integrable.const_mul hf x))
+      (Integrable.const_mul hf x₀) (Integrable.aestronglyMeasurable hf) (Eventually.of_forall fun x x_1 x_2 => le_rfl)
+      (Integrable.norm hf)
+      (Eventually.of_forall fun a x x_1 =>
+        Eq.mp
+          (HasDerivAt.congr_simp (fun y => id y * f a) (fun y => y * f a) (id (Eq.refl fun y => y * f a)) (1 * f a)
+            (f a) (one_mul (f a)) x x (Eq.refl x))
+          (HasDerivAt.mul_const (hasDerivAt_id x) (f a)));
+  h.right
+info: FSCProbes/Imports.lean:134:0: 'FSCProbes.Imports.gram_lowerOrthant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FSCProbes/Imports.lean:135:0: 'FSCProbes.Imports.joint_linear_image_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FSCProbes/Imports.lean:136:0: 'FSCProbes.Imports.affine_image_isGaussian' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FSCProbes/Imports.lean:137:0: 'FSCProbes.Imports.convex_support_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FSCProbes/Imports.lean:138:0: 'FSCProbes.Imports.schur_complement_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FSCProbes/Imports.lean:139:0: 'FSCProbes.Imports.haar_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FSCProbes/Imports.lean:140:0: 'FSCProbes.Imports.hasDerivAt_integral_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3797/3798] Built FSC (1.2s)
+Build completed successfully (3798 jobs).

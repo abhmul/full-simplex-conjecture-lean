@@ -34,6 +34,17 @@ import FSC
 #print axioms FSC.hasDerivAt_capMass_dilate
 #print axioms FSC.capEnergy_pos
 #print axioms FSC.capEnergy_padNormals
+#print axioms FSC.lin_pairResidual_sequential
+#print axioms FSC.lintegral_normalSlice
+#print axioms FSC.capMass_support_C1
+#print axioms FSC.isLogConcave_capMeasure
+#print axioms FSC.quadratic_support_tangent
+#print axioms FSC.cdf_normalizedAdd_eq_noiseAverage
+#print axioms FSC.exists_padded_unit_gram_law
+#print axioms FSC.map_paddedTangentCoordinates_stdGaussian
+#print axioms FSC.gaussian_frontier_thresholdEvent_null
+#print axioms FSC.continuous_cdf_on_correlations
+#print axioms FSC.exists_cdf_minimizer
 
 set_option pp.all true in
 #check FSC.Peano2.hasDerivWithinAt_noiseAverage

@@ -103,6 +103,17 @@ theorem pairMean_sequential {n : ℕ} (G : Mat n) (hG : WeakSimplex.IsCorrelatio
   field_simp [hc]
   ring
 
+/-- The actual sequential residual map agrees pointwise with the canonical two-pin residual. -/
+theorem lin_pairResidual_sequential {n : ℕ} (G : Mat n) (hG : WeakSimplex.IsCorrelation G)
+    (i j : Fin n) (hc : 1 - (G i j) ^ 2 ≠ 0) (x : Coord n) (k : Fin n) :
+    lin (pairResidual G i j) x k = lin (singleResidual G i) x k -
+      (singleCov G i k j / (1 - (G i j) ^ 2)) * lin (singleResidual G i) x j := by
+  have hsym : G j i = G i j := by simpa only [star_trivial] using hG.1.isHermitian.apply i j
+  rw [lin_pairResidual_apply, lin_singleResidual_apply, lin_singleResidual_apply]
+  simp only [pairAlpha, pairBeta, singleCov, hsym]
+  field_simp [hc]
+  ring
+
 /-- Sequential residual covariance is the same full-index covariance used by pairLaw. -/
 theorem pairCov_sequential {n : ℕ} (G : Mat n) (hG : WeakSimplex.IsCorrelation G)
     (i j : Fin n) (hc : 1 - (G i j) ^ 2 ≠ 0) :

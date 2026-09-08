@@ -25,6 +25,7 @@ set_option pp.all true in
 #print axioms FSC.pairResidual_mul_apply
 #print axioms FSC.pairCov_apply
 #print axioms FSC.pairMean_sequential
+#print axioms FSC.lin_pairResidual_sequential
 #print axioms FSC.pairCov_sequential
 #print axioms FSC.pair_coefficients_pinned
 #print axioms FSC.pairResidual_pinned
