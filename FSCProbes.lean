@@ -1,2 +1,5 @@
 import FSCProbes.Algebra
+import FSCProbes.SingularTriangle
+import FSCProbes.TriangleThreshold
+import FSCProbes.TriangleVariation
 import FSCProbes.Imports

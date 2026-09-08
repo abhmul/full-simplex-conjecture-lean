@@ -1,8 +1,8 @@
 # FSC work-package graph
 
-This initial graph has 26 packages (WP00–WP25), including bootstrap, an analytic integration probe and final assurance. The count follows the current interfaces, not the old WSC count. Refine package size when compiler evidence warrants it; preserve mathematical contracts and record changed dependencies.
+The initial graph had 26 packages (WP00–WP25). Actual importing consumers justified extracting the generic input-coordinate calculus (WP26) and vector-domain Peano bridge (WP27), so the concrete singular probe could close before universal threshold calculus. The count is neither a quota nor a limit. Refine package size when compiler evidence warrants it; preserve mathematical contracts and record changed dependencies.
 
-Status: WP00 real compiler/audit probes and WP01 coupled definitions are integrated; WP14 scalar comparison/equality is reviewed and integrating; WP20 compact barrier is kernel-checked and independently source-reviewed. WP02 affine/ordinary Gram, WP08 noise averaging and WP10 singular analytic probe are active in disjoint owned files. Dependencies below indicate required proof inputs, not a prohibition on starting an independent concrete spike or developing against an explicit conditional interface. See cards and IMPLEMENTATION_LOG.md for evidence; no final FSC theorem is certified yet.
+Status: WP00–WP04, WP08, WP10, WP11, WP14, WP20, WP26 and WP27 have reviewed, freshly audited implementations integrated by the lead. The singular probe includes the actual rank-increasing normalized-addition derivative. WP05 actual support C1, WP06 support tangent, WP09 universal variation infrastructure and WP13 continuity/compactness are active in disjoint owned files. Dependencies indicate required proof inputs, not a prohibition on developing against an explicit conditional interface. See cards and IMPLEMENTATION_LOG.md; no final FSC theorem is certified yet.
 
 | Package | Responsibility | Dependencies |
 | --- | --- | --- |
@@ -11,15 +11,15 @@ Status: WP00 real compiler/audit probes and WP01 coupled definitions are integra
 | [WP02](work-packages/WP02.md) | All-PSD affine laws and ordinary Gram realization | WP01 |
 | [WP03](work-packages/WP03.md) | Canonical one-pin law | WP02 |
 | [WP04](work-packages/WP04.md) | Canonical pair law, weights and general row positivity | WP03 |
-| [WP05](work-packages/WP05.md) | Finite Gaussian support C1 neighborhoods | WP03 |
-| [WP06](work-packages/WP06.md) | Support quadratic tangent from Prekopa | WP01 |
-| [WP07](work-packages/WP07.md) | Threshold Hessian and Peano expansion | WP04, WP05 |
+| [WP05](work-packages/WP05.md) | Finite Gaussian support C1 neighborhoods | WP03, WP26 |
+| [WP06](work-packages/WP06.md) | Support quadratic tangent from Prekopa | WP01, WP11 |
+| [WP07](work-packages/WP07.md) | Threshold Hessian and Peano expansion | WP04, WP05, WP27 |
 | [WP08](work-packages/WP08.md) | Bounded finite-second-moment noise averaging | WP01 |
 | [WP09](work-packages/WP09.md) | Universal normalized PSD-addition derivative | WP02, WP07, WP08 |
-| [WP10](work-packages/WP10.md) | Singular analytic integration probe | WP03, WP04, WP05, WP07, WP08 |
+| [WP10](work-packages/WP10.md) | Singular analytic integration probe | WP02, WP08, WP26, WP27 |
 | [WP11](work-packages/WP11.md) | Unbounded dilation, energy and exact padding | WP01, WP02 |
 | [WP12](work-packages/WP12.md) | Singular rank-padded Gram and tangent realization | WP02 |
-| [WP13](work-packages/WP13.md) | All-correlation CDF continuity and compactness | WP02 |
+| [WP13](work-packages/WP13.md) | All-correlation CDF continuity and compactness | WP02, WP04 |
 | [WP14](work-packages/WP14.md) | Componentwise scalar comparison and equality | WP01 |
 | [WP15](work-packages/WP15.md) | Finite row tests and signed loss rigidity | WP04, WP09 |
 | [WP16](work-packages/WP16.md) | Facet compatibility and padded component identities | WP04, WP05, WP11, WP12 |
@@ -32,6 +32,8 @@ Status: WP00 real compiler/audit probes and WP01 coupled definitions are integra
 | [WP23](work-packages/WP23.md) | Positive-threshold equality and strictness | WP19, WP21, WP22 |
 | [WP24](work-packages/WP24.md) | Measure and finite-maximum public wrappers | WP22, WP23 |
 | [WP25](work-packages/WP25.md) | Independent statement and clean-checkout acceptance | WP24, WP10 |
+| [WP26](work-packages/WP26.md) | Product and finite-input partial derivative adapters | WP01 |
+| [WP27](work-packages/WP27.md) | Vector-domain derivative-to-Peano bridge | WP01 |
 
 Critical path: canonical laws and support C1 → threshold Peano plus generic averaging → universal feasible variation → minimizer slope → barrier/induction. Ordinary Gram realization and general row positivity occur BEFORE the singular-only facet branch. The scalar, generic averaging, reciprocal support, dilation, compactness and abstract barrier work have useful independent outputs.
 

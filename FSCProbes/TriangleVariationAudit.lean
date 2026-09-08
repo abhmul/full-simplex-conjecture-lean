@@ -1,0 +1,38 @@
+import FSCProbes.TriangleVariation
+
+#check FSCProbes.TriangleVariation.noiseCov_eq_outer
+#check FSCProbes.TriangleVariation.peano2_lineCDF
+#check FSCProbes.TriangleVariation.map_normalizedNoise
+#check FSCProbes.TriangleVariation.cdf_normalizedAdd_eq_noiseAverage
+#check FSCProbes.TriangleVariation.hasDerivWithinAt_normalizedAdd
+#check FSCProbes.TriangleVariation.normalizedAdd_derivative_neg
+#check FSCProbes.TriangleVariation.normalizedAdd_isCorrelation
+#check FSCProbes.TriangleVariation.gram_rank
+#check FSCProbes.TriangleVariation.noiseCov_rank
+#check FSCProbes.TriangleVariation.normalizedAdd_rank_increases
+
+#print axioms FSCProbes.TriangleVariation.hasDerivAt_lineCDF
+#print axioms FSCProbes.TriangleVariation.hasDerivAt_lineSlope_zero
+#print axioms FSCProbes.TriangleVariation.peano2_lineCDF
+#print axioms FSCProbes.TriangleVariation.hasDerivAt_drift_zero
+#print axioms FSCProbes.TriangleVariation.integral_sq_stdGaussianReal
+#print axioms FSCProbes.TriangleVariation.integrable_sq_stdGaussianReal
+#print axioms FSCProbes.TriangleVariation.hasDerivWithinAt_noiseAverage
+#print axioms FSCProbes.TriangleVariation.noiseCov_posSemidef
+#print axioms FSCProbes.TriangleVariation.map_real_to_coordOne
+#print axioms FSCProbes.TriangleVariation.map_noiseVector
+#print axioms FSCProbes.TriangleVariation.map_add_scalarNoise
+#print axioms FSCProbes.TriangleVariation.normalizer_cov
+#print axioms FSCProbes.TriangleVariation.map_normalizedNoise
+#print axioms FSCProbes.TriangleVariation.normalizedNoise_event
+#print axioms FSCProbes.TriangleVariation.cdf_normalizedAdd_eq_noiseAverage
+#print axioms FSCProbes.TriangleVariation.hasDerivWithinAt_normalizedAdd
+#print axioms FSCProbes.TriangleVariation.normalizedAdd_derivative_neg
+#print axioms FSCProbes.TriangleVariation.normalizedAdd_isCorrelation
+#print axioms FSCProbes.TriangleVariation.normalizedAdd_det
+#print axioms FSCProbes.TriangleVariation.normalizedAdd_rank
+#print axioms FSCProbes.TriangleVariation.gram_rank
+#print axioms FSCProbes.TriangleVariation.noiseCov_eq_outer
+#print axioms FSCProbes.TriangleVariation.noiseCov_rank
+#print axioms FSCProbes.TriangleVariation.normalizedAdd_zero
+#print axioms FSCProbes.TriangleVariation.normalizedAdd_rank_increases

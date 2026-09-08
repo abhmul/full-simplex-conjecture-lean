@@ -70,8 +70,8 @@
         "FSC/Gaussian/PairLaw.lean",
         "FSC/Gaussian/PairWeights.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_algebra"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP05",
@@ -81,22 +81,24 @@
         "WP26"
       ],
       "owned_files": [
-        "FSC/Support/Differentiation.lean"
+        "FSC/Support/Differentiation.lean",
+        "FSC/Support/Slicing.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "wp00_imports"
     },
     {
       "id": "WP06",
       "title": "Support quadratic tangent from Prekopa",
       "dependencies": [
-        "WP01"
+        "WP01",
+        "WP11"
       ],
       "owned_files": [
         "FSC/Support/QuadraticTangent.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "root"
     },
     {
       "id": "WP07",
@@ -134,10 +136,11 @@
         "WP08"
       ],
       "owned_files": [
-        "FSC/Gaussian/FeasibleVariation.lean"
+        "FSC/Gaussian/NormalizedAddition.lean",
+        "FSC/Analysis/FeasibleVariation.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "analytic_preflight"
     },
     {
       "id": "WP10",
@@ -154,8 +157,8 @@
         "FSCProbes/TriangleVariation.lean",
         "FSCProbes/BoundaryControls.lean"
       ],
-      "status": "in-progress",
-      "owner": "analytic_preflight"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP11",
@@ -169,7 +172,7 @@
         "FSC/Support/Padding.lean",
         "FSC/Gaussian/StandardDensity.lean"
       ],
-      "status": "in-progress",
+      "status": "integrated",
       "owner": "root"
     },
     {
@@ -188,14 +191,15 @@
       "id": "WP13",
       "title": "All-correlation CDF continuity and compactness",
       "dependencies": [
-        "WP02"
+        "WP02",
+        "WP04"
       ],
       "owned_files": [
         "FSC/Gaussian/CDFContinuity.lean",
         "FSC/Compactness.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "wp00_algebra"
     },
     {
       "id": "WP14",
@@ -372,8 +376,8 @@
         "FSC/Analysis/PartialDerivatives.lean",
         "FSC/Analysis/FinitePartialDerivatives.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_imports"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP27",

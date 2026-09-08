@@ -1,10 +1,10 @@
 # WP07 generic Peano adapter evidence
 
-Status: kernel-checked-local; generic adapter only. Owner: `/root/wp00_imports`, assigned by the lead on 2026-09-08. Exclusive files: `FSC/Analysis/PeanoTaylor.lean`, `checks/wp07/`, and this evidence note. The lead retains ownership of the WP07 threshold package card, shared definitions and Git integration. Ownership is recorded before source edits.
+Status: reviewed and integrated as WP27; generic adapter only. Owner: `/root/wp00_imports`, assigned by the lead on 2026-09-08. Exclusive files: `FSC/Analysis/PeanoTaylor.lean`, `checks/wp07/`, and this evidence note. The lead retains ownership of the WP07 threshold package card, shared definitions and Git integration. Ownership is recorded before source edits. The lead independently reviewed the neighborhood derivative hypotheses and automatic Hessian symmetry and installed the module warning-clean.
 
 Read the governing documents and `docs/pro-return/SUPPORT_NOISE_VARIATION.md` sections 2–3. The deliverable is a proved vector-domain bridge from an actual neighborhood derivative field differentiable at the base to the exact shared `FSC.Peano2`; this does not certify threshold regularity.
 
-Pinned source search found `Convex.isLittleO_pow_succ` in `Mathlib/Analysis/Calculus/MeanValue.lean`, a vector-domain derivative-to-remainder theorem, and `second_derivative_symmetric_of_eventually_of_real` in `Mathlib/Analysis/Calculus/FDeriv/Symmetric.lean`. The univariate `taylor_isLittleO` is not used as a vector-domain theorem. `ContDiff/FTaylorSeries.lean` describes derivative towers but supplies no directly found little-o remainder theorem. These are source findings pending actual consumers.
+Pinned source search found `Convex.isLittleO_pow_succ` in `Mathlib/Analysis/Calculus/MeanValue.lean`, a vector-domain derivative-to-remainder theorem, and `second_derivative_symmetric_of_eventually_of_real` in `Mathlib/Analysis/Calculus/FDeriv/Symmetric.lean`. The univariate `taylor_isLittleO` is not used as a vector-domain theorem. `ContDiff/FTaylorSeries.lean` describes derivative towers but supplies no directly found little-o remainder theorem. The accepted declarations below are compiled consumers of these exact APIs.
 
 ## Exact accepted interfaces
 

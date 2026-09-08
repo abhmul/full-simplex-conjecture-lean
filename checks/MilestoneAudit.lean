@@ -23,6 +23,17 @@ import FSC
 #print axioms FSC.singleLaw_pin_ae
 #print axioms FSC.contDiff_two_prod_of_partials
 #print axioms FSC.peano2_of_contDiffAt
+#print axioms FSC.lintegral_pairPin
+#print axioms FSC.pairLaw_pin_ae
+#print axioms FSC.pairCov_sequential
+#print axioms FSC.q_symm
+#print axioms FSC.rowK_pos
+#print axioms FSC.rowC_pos
+#print axioms FSC.kappa_pos
+#print axioms FSC.contDiffAt_two_pi_of_partials
+#print axioms FSC.hasDerivAt_capMass_dilate
+#print axioms FSC.capEnergy_pos
+#print axioms FSC.capEnergy_padNormals
 
 set_option pp.all true in
 #check FSC.Peano2.hasDerivWithinAt_noiseAverage
