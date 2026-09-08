@@ -59,6 +59,14 @@ import FSC
 #print axioms FSC.hasDerivAt_simplex_cdf
 #print axioms FSC.exists_correlation_capMass
 #print axioms FSC.reference_floor_of_comparison
+#print axioms FSC.capMass_eq_of_gram
+#print axioms FSC.capEnergy_padded_eq
+#print axioms FSC.singlePinMass_sub_pressure_pos
+#print axioms FSC.normalized_facetPressure
+#print axioms FSC.correlation_eq_simplex_of_uniform_rows
+#print axioms FSC.finite_row_test_bound
+#print axioms FSC.cdf_replacementCov_of_duplicate
+#print axioms FSC.cdf_minimum_distinct_not_posDef
 
 set_option pp.all true in
 #check FSC.Peano2.hasDerivWithinAt_noiseAverage

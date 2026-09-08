@@ -227,8 +227,8 @@
         "FSC/Minimizers/FiniteDirections.lean",
         "FSC/Scalar/RowLoss.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_algebra"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP16",
@@ -245,8 +245,8 @@
         "FSC/Gaussian/SubspaceGaussian.lean",
         "FSC/Support/GramInvariance.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_imports"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP17",
@@ -278,7 +278,7 @@
         "FSC/Minimizers/Exclusions.lean",
         "FSC/Gaussian/Replacement.lean"
       ],
-      "status": "in-progress",
+      "status": "integrated",
       "owner": "root"
     },
     {

@@ -23,6 +23,10 @@ import FSC.Analysis.PartialDerivatives
 import FSC.Analysis.FinitePartialDerivatives
 import FSC.Analysis.PeanoTaylor
 import FSC.Scalar.Componentwise
+import FSC.Scalar.RowLoss
+import FSC.Facet.Compatibility
+import FSC.Minimizers.FiniteDirections
+import FSC.Minimizers.Exclusions
 import FSC.Simplex.BaseCases
 import FSC.Simplex.Recursion
 import FSC.Threshold.LinearBarrier
