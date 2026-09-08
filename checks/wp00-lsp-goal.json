@@ -1,0 +1,13 @@
+{
+  "diagnostics": {
+    "success": true,
+    "diagnostics": [],
+    "timed_out": false
+  },
+  "goal": {
+    "goals": [
+      "n : ℕ\nG : Mat n\nt : ℝ\n⊢ cdf G t ≤ 1"
+    ],
+    "rendered": "```lean\nn : ℕ\nG : Mat n\nt : ℝ\n⊢ cdf G t ≤ 1\n```"
+  }
+}

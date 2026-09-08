@@ -16,8 +16,8 @@
         "FSCProbes/Imports.lean",
         "FSCProbes/Audit.lean"
       ],
-      "status": "bootstrap-in-progress",
-      "owner": null
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP01",
@@ -31,8 +31,8 @@
         "FSC/Support/Definitions.lean",
         "FSC/Analysis/Definitions.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP02",
@@ -44,8 +44,8 @@
         "FSC/Gaussian/AffineLaw.lean",
         "FSC/LinearAlgebra/Gram.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "wp00_algebra"
     },
     {
       "id": "WP03",
@@ -118,8 +118,8 @@
       "owned_files": [
         "FSC/Analysis/NoiseAveraging.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "wp00_imports"
     },
     {
       "id": "WP09",
@@ -149,8 +149,8 @@
         "FSCProbes/SingularTriangle.lean",
         "FSCProbes/BoundaryControls.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "analytic_preflight"
     },
     {
       "id": "WP11",
@@ -200,8 +200,8 @@
       "owned_files": [
         "FSC/Scalar/Componentwise.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP15",
@@ -286,8 +286,8 @@
       "owned_files": [
         "FSC/Threshold/LinearBarrier.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "reviewed",
+      "owner": "root"
     },
     {
       "id": "WP21",

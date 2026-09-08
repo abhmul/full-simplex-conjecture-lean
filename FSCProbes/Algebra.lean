@@ -1,6 +1,9 @@
-/- UNCOMPILED consultation probes. Complete proof attempts, not placeholders.
-   These algebraic lemmas do not certify any Gaussian analytic interface. -/
-import Mathlib
+/- Algebraic consultation probes.
+   These lemmas do not certify any Gaussian analytic interface. -/
+import Mathlib.Analysis.InnerProductSpace.GramMatrix
+import Mathlib.Analysis.InnerProductSpace.PiL2
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Ring
 
 set_option autoImplicit false
 
@@ -11,20 +14,20 @@ theorem quadraticRemainder (u e U E : ℝ)
     u ^ 2 / U + e ^ 2 / E - (u + e) ^ 2 / (U + E) =
       (E * u - U * e) ^ 2 / ((U + E) * U * E) := by
   field_simp [hU, hE, hX]
-  <;> ring
+  ring
 
 theorem signedRowRemainder (n x a : ℝ) (hn : n ≠ 0) :
     (n - 2) * (1 - x) - (n * a - 1) =
       n / 2 * (1 - 2 * a - ((n - 2) / n) * x ^ 2) +
         (n - 2) / 2 * (1 - x) ^ 2 := by
   field_simp [hn]
-  <;> ring
+  ring
 
 theorem pairPinOrthogonality (a b c : ℝ) (hc : 1 - c ^ 2 ≠ 0) :
     a - ((a - c * b) / (1 - c ^ 2) +
       (b - c * a) / (1 - c ^ 2) * c) = 0 := by
   field_simp [hc]
-  <;> ring
+  ring
 
 theorem noiseDiagonalCancellation (t p l c q : ℝ) :
     (t * l * p + l * (-t * p - c * q)) / 2 = -(l * c * q) / 2 := by

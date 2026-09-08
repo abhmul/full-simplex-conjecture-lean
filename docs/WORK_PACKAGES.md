@@ -2,7 +2,7 @@
 
 This initial graph has 26 packages (WP00–WP25), including bootstrap, an analytic integration probe and final assurance. The count follows the current interfaces, not the old WSC count. Refine package size when compiler evidence warrants it; preserve mathematical contracts and record changed dependencies.
 
-Status: WP00 bootstrap in progress; all mathematical packages are planned and unassigned. The lead must freeze coupled definitions before assigning workers. Dependencies below indicate required proof inputs, not a prohibition on starting an independent concrete spike or developing against an explicit conditional interface.
+Status: WP00 real compiler/audit probes and WP01 coupled definitions are integrated; WP14 scalar comparison/equality is reviewed and integrating; WP20 compact barrier is kernel-checked and independently source-reviewed. WP02 affine/ordinary Gram, WP08 noise averaging and WP10 singular analytic probe are active in disjoint owned files. Dependencies below indicate required proof inputs, not a prohibition on starting an independent concrete spike or developing against an explicit conditional interface. See cards and IMPLEMENTATION_LOG.md for evidence; no final FSC theorem is certified yet.
 
 | Package | Responsibility | Dependencies |
 | --- | --- | --- |
