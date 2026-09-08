@@ -38,6 +38,22 @@ theorem measurableSet_thresholdEvent {n : ℕ} (b : Coord n) :
 theorem cdf_nonneg {n : ℕ} (G : Mat n) (t : ℝ) : 0 ≤ cdf G t :=
   ENNReal.toReal_nonneg
 
+theorem thresholdCDF_nonneg {n : ℕ} (G : Mat n) (b : Coord n) :
+    0 ≤ thresholdCDF G b := ENNReal.toReal_nonneg
+
+theorem thresholdCDF_le_one {n : ℕ} (G : Mat n) (b : Coord n) :
+    thresholdCDF G b ≤ 1 := by
+  exact ENNReal.toReal_le_of_le_ofReal zero_le_one (by simpa using
+    (prob_le_one (μ := multivariateGaussian (0 : Coord n) G) (s := thresholdEvent b)))
+
+theorem measurable_thresholdCDF {n : ℕ} (G : Mat n) :
+    Measurable (thresholdCDF G) := by
+  have hS : MeasurableSet {p : Coord n × Coord n | ∀ i, p.2 i ≤ p.1 i} := by
+    simp only [Set.setOf_forall]
+    exact MeasurableSet.iInter fun i ↦ measurableSet_le (by fun_prop) (by fun_prop)
+  exact (measurable_measure_prodMk_left
+    (ν := multivariateGaussian (0 : Coord n) G) hS).ennreal_toReal
+
 theorem cdf_le_one {n : ℕ} (G : Mat n) (t : ℝ) : cdf G t ≤ 1 := by
   exact ENNReal.toReal_le_of_le_ofReal zero_le_one (by simpa using
     (prob_le_one (μ := multivariateGaussian (0 : Coord n) G)

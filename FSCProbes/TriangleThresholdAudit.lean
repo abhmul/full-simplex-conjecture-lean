@@ -1,0 +1,21 @@
+import FSCProbes.TriangleThreshold
+
+#check FSCProbes.TriangleThreshold.thresholdCDF_activeRegion
+#check FSCProbes.TriangleThreshold.bivariateCDF_slicing
+#check FSCProbes.TriangleThreshold.hasDerivAt_bivariateCDF_left
+#check FSCProbes.TriangleThreshold.hasDerivAt_bivariateCDF_right
+#check FSCProbes.TriangleThreshold.contDiffAt_thresholdCDF
+#check FSCProbes.TriangleThreshold.peano2_thresholdCDF
+
+#print axioms FSCProbes.TriangleThreshold.thresholdCDF_eq_triangleEvent
+#print axioms FSCProbes.TriangleThreshold.thresholdCDF_activeRegion
+#print axioms FSCProbes.TriangleThreshold.bivariateCDF_symm
+#print axioms FSCProbes.TriangleThreshold.bivariateCDF_product
+#print axioms FSCProbes.TriangleThreshold.bivariateCDF_slicing_gaussian
+#print axioms FSCProbes.TriangleThreshold.bivariateCDF_slicing
+#print axioms FSCProbes.TriangleThreshold.hasDerivAt_Iic_integral_of_continuous
+#print axioms FSCProbes.TriangleThreshold.hasDerivAt_bivariateCDF_left
+#print axioms FSCProbes.TriangleThreshold.hasDerivAt_bivariateCDF_right
+#print axioms FSCProbes.TriangleThreshold.contDiff_bivariateCDF
+#print axioms FSCProbes.TriangleThreshold.contDiffAt_thresholdCDF
+#print axioms FSCProbes.TriangleThreshold.peano2_thresholdCDF

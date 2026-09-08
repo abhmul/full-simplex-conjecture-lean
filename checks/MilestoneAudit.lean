@@ -11,3 +11,18 @@ import FSC
 #print axioms FSC.componentwise_equality
 #print axioms FSC.compact_slope_comparison
 #print axioms FSC.slope_eq_of_touch
+#print axioms FSC.map_affine_multivariateGaussian
+#print axioms FSC.map_add_sqrt_smul_multivariateGaussian
+#print axioms FSC.exists_unit_gram
+#print axioms FSC.map_gramVectors_stdGaussian
+#print axioms FSC.Peano2.hasDerivWithinAt_noiseAverage
+#print axioms FSC.measurable_thresholdCDF
+#print axioms FSC.thresholdCDF_nonneg
+#print axioms FSC.thresholdCDF_le_one
+#print axioms FSC.measure_singlePin
+#print axioms FSC.singleLaw_pin_ae
+#print axioms FSC.contDiff_two_prod_of_partials
+#print axioms FSC.peano2_of_contDiffAt
+
+set_option pp.all true in
+#check FSC.Peano2.hasDerivWithinAt_noiseAverage

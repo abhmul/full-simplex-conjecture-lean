@@ -42,10 +42,11 @@
       ],
       "owned_files": [
         "FSC/Gaussian/AffineLaw.lean",
-        "FSC/LinearAlgebra/Gram.lean"
+        "FSC/LinearAlgebra/Gram.lean",
+        "FSC/Gaussian/IndependentSum.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_algebra"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP03",
@@ -56,8 +57,8 @@
       "owned_files": [
         "FSC/Gaussian/SinglePin.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP04",
@@ -66,16 +67,18 @@
         "WP03"
       ],
       "owned_files": [
-        "FSC/Gaussian/PairLaw.lean"
+        "FSC/Gaussian/PairLaw.lean",
+        "FSC/Gaussian/PairWeights.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "wp00_algebra"
     },
     {
       "id": "WP05",
       "title": "Finite Gaussian support C1 neighborhoods",
       "dependencies": [
-        "WP03"
+        "WP03",
+        "WP26"
       ],
       "owned_files": [
         "FSC/Support/Differentiation.lean"
@@ -100,7 +103,8 @@
       "title": "Threshold Hessian and Peano expansion",
       "dependencies": [
         "WP04",
-        "WP05"
+        "WP05",
+        "WP27"
       ],
       "owned_files": [
         "FSC/Gaussian/ThresholdExpansion.lean",
@@ -118,8 +122,8 @@
       "owned_files": [
         "FSC/Analysis/NoiseAveraging.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_imports"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP09",
@@ -139,14 +143,15 @@
       "id": "WP10",
       "title": "Singular analytic integration probe",
       "dependencies": [
-        "WP03",
-        "WP04",
-        "WP05",
-        "WP07",
-        "WP08"
+        "WP02",
+        "WP08",
+        "WP26",
+        "WP27"
       ],
       "owned_files": [
         "FSCProbes/SingularTriangle.lean",
+        "FSCProbes/TriangleThreshold.lean",
+        "FSCProbes/TriangleVariation.lean",
         "FSCProbes/BoundaryControls.lean"
       ],
       "status": "in-progress",
@@ -161,10 +166,11 @@
       ],
       "owned_files": [
         "FSC/Support/Dilation.lean",
-        "FSC/Support/Padding.lean"
+        "FSC/Support/Padding.lean",
+        "FSC/Gaussian/StandardDensity.lean"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "root"
     },
     {
       "id": "WP12",
@@ -286,7 +292,7 @@
       "owned_files": [
         "FSC/Threshold/LinearBarrier.lean"
       ],
-      "status": "reviewed",
+      "status": "integrated",
       "owner": "root"
     },
     {
@@ -357,6 +363,25 @@
       ],
       "status": "planned",
       "owner": null
+    },
+    {
+      "id": "WP26",
+      "title": "Product and finite-input partial derivative adapters",
+      "dependencies": ["WP01"],
+      "owned_files": [
+        "FSC/Analysis/PartialDerivatives.lean",
+        "FSC/Analysis/FinitePartialDerivatives.lean"
+      ],
+      "status": "in-progress",
+      "owner": "wp00_imports"
+    },
+    {
+      "id": "WP27",
+      "title": "Vector-domain derivative-to-Peano bridge",
+      "dependencies": ["WP01"],
+      "owned_files": ["FSC/Analysis/PeanoTaylor.lean"],
+      "status": "integrated",
+      "owner": "root"
     }
   ]
 }
