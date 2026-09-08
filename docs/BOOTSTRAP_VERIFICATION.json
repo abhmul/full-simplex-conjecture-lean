@@ -1,0 +1,64 @@
+{
+  "status": "bootstrap_only_not_FSC_verification",
+  "date": "2026-09-08",
+  "lean_version": "4.31.0",
+  "lean_commit": "68218e876d2a38b1985b8590fff244a83c321783",
+  "lake_version": "5.0.0-src+68218e8",
+  "resolved_packages": {
+    "mathlib": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+    "\u00abweak-simplex-conjecture-lean\u00bb": "a204c53cae45652d12524132dbb9a2e0ffe8cf78",
+    "plausible": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+    "LeanSearchClient": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "importGraph": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+    "proofwidgets": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+    "aesop": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+    "Qq": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+    "batteries": "fa08db58b30eb033edcdab331bba000827f9f785",
+    "Cli": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c"
+  },
+  "actual_package_directories": {
+    "mathlib": "mathlib",
+    "\u00abweak-simplex-conjecture-lean\u00bb": "weak-simplex-conjecture-lean",
+    "plausible": "plausible",
+    "LeanSearchClient": "LeanSearchClient",
+    "importGraph": "importGraph",
+    "proofwidgets": "proofwidgets",
+    "aesop": "aesop",
+    "Qq": "Qq",
+    "batteries": "batteries",
+    "Cli": "Cli"
+  },
+  "all_actual_dependency_commits_match": true,
+  "initial_resolution_command": "MATHLIB_NO_CACHE_ON_UPDATE=1 lake update",
+  "empty_root_build": {
+    "command": "lake build --wfail",
+    "exit_code": 0,
+    "jobs": 3,
+    "scope": "empty bootstrap root only"
+  },
+  "direct_root_compile": {
+    "command": "lake env lean -DwarningAsError=true FSC.lean",
+    "exit_code": 0
+  },
+  "synthetic_audit_parser_tests": 12,
+  "symbolic_checks_replayed": true,
+  "source_objects_verified": 17,
+  "full_manuscript_lines": 2206,
+  "package_graph": {
+    "packages": 26,
+    "acyclic": true,
+    "ownership_overlap": false,
+    "independent_math_review": true
+  },
+  "skill_frontmatter_validation": "passed",
+  "skill_forward_test": "passed_after_distinguishing_generic_hypotheses_from_unpaid_project_oracles",
+  "wsc_original_clean_and_untouched": true,
+  "lean_source_probes_compiled": false,
+  "actual_lean_json_audit_calibrated": false,
+  "gaussian_derivative_formalized": false,
+  "fsc_formalized": false,
+  "clean_clone_release_reproduced": false,
+  "separate_implementation_agent_launched": false,
+  "remote_created": false,
+  "operator_minutes": null
+}

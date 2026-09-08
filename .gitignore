@@ -1,0 +1,5 @@
+.lake/
+Scratch/
+__pycache__/
+*.pyc
+checks/local/

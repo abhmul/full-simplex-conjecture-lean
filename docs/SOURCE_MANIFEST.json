@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "research_source_commit": "4f6ca88",
+  "research_root_original": "/home/abhmul/Documents/mros-research-lab-v2.4-pilot-2026-08-31",
+  "source_objects": [
+    {
+      "local_path": "docs/pro-return/DOSSIER.md",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/DOSSIER.md",
+      "bytes": 20239,
+      "sha256": "87efe2b1bc1a81904796b4a5dddb4510494385a660d0f8517c0c7272e58c80dc",
+      "byte_identical": true
+    },
+    {
+      "local_path": "docs/pro-return/ENVIRONMENT_AND_ACCEPTANCE.md",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/ENVIRONMENT_AND_ACCEPTANCE.md",
+      "bytes": 12206,
+      "sha256": "9530ff702b651a64fe91ec7dac74e58357832d4ef60362901a06094ea488b22e",
+      "byte_identical": true
+    },
+    {
+      "local_path": "docs/pro-return/INTERFACES.md",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/INTERFACES.md",
+      "bytes": 14796,
+      "sha256": "37851b3c4ec78b23a2f9c652a08ad406920775890ad3ba9becbd59e1b794efb1",
+      "byte_identical": true
+    },
+    {
+      "local_path": "docs/pro-return/PROBES.md",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/PROBES.md",
+      "bytes": 8731,
+      "sha256": "f2e36052c3bbb13a4681468ea8666ebd4d8ce66c58e446aa126439570b12d7bf",
+      "byte_identical": true
+    },
+    {
+      "local_path": "docs/pro-return/SOURCE_MAP.md",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/SOURCE_MAP.md",
+      "bytes": 15726,
+      "sha256": "cfcc86c7ec6ae62324f24173f7d508eea56a32db2adb38811c8eaf8e11c699e8",
+      "byte_identical": true
+    },
+    {
+      "local_path": "docs/pro-return/SUPPORT_NOISE_VARIATION.md",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/SUPPORT_NOISE_VARIATION.md",
+      "bytes": 12176,
+      "sha256": "3796cc75ee3fba3203ef96a68d19bc9dae5ee50982e5521de1014c01fdb28961",
+      "byte_identical": true
+    },
+    {
+      "local_path": "scripts/audit_axioms.py",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/scripts/audit_axioms.py",
+      "bytes": 4748,
+      "sha256": "3a1d65537778f32b3fbcab5903165ed96be4a4290fb313ffb8428dbd4e2064ad",
+      "byte_identical": true
+    },
+    {
+      "local_path": "scripts/symbolic_checks.py",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/scripts/symbolic_checks.py",
+      "bytes": 2572,
+      "sha256": "5871eeb7ad771f30690ddc466cd0e1d966bc4c0a08bf65bd2a0ed0e0c4a2e9d5",
+      "byte_identical": true
+    },
+    {
+      "local_path": "scripts/test_audit_axioms.py",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/scripts/test_audit_axioms.py",
+      "bytes": 2183,
+      "sha256": "6cae585c2106195f46f8f79bce743927ec214df387fc45f5c643fc3eaca523c7",
+      "byte_identical": true
+    },
+    {
+      "local_path": "FSCProbes/Algebra.lean",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/probe_project/FSCProbes/Algebra.lean",
+      "bytes": 1539,
+      "sha256": "c4bdee0472599e00779722c08f99519a83669bfd2e49cc238f9435bb7b178cfb",
+      "byte_identical": true
+    },
+    {
+      "local_path": "FSCProbes/Audit.lean",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/probe_project/FSCProbes/Audit.lean",
+      "bytes": 342,
+      "sha256": "31492240c2112023914d6de7d9bb0d35384a10bfa14661514c061c74ae3f65bc",
+      "byte_identical": true
+    },
+    {
+      "local_path": "FSCProbes/Imports.lean",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/probe_project/FSCProbes/Imports.lean",
+      "bytes": 2076,
+      "sha256": "5a55001f4804e133cd608b1c47a0ee828978e6b2c631bed6df902aa35f359f24",
+      "byte_identical": true
+    },
+    {
+      "local_path": "docs/sources/TEACHING_MANUSCRIPT.md",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-teaching-writeup-01/attachments/0045__gaussian_simplex_teaching.md",
+      "bytes": 100201,
+      "sha256": "f519d8f70d38914b1076ea0fb1155b8973bd13a8e2fb7f0234c32550bb6a7625",
+      "byte_identical": true
+    },
+    {
+      "local_path": "docs/sources/FRESH_ANALYTIC_AUDIT.md",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/criticism/2026-09-07-gpt6-all-dimensional-fsc-fresh-critic-01/attachments/0003__ALL_DIMENSIONAL_FSC_AUDIT.md",
+      "bytes": 67231,
+      "sha256": "a98525f1a2d4fdf3b02885f96aef95d2cce4dce66c985b1b58e019ca6eb35fe1",
+      "byte_identical": true
+    },
+    {
+      "local_path": "docs/sources/CONTINUING_ANALYTIC_AUDIT.md",
+      "original": "inbox/pro-chat-exports/gaussian-extremal-theory/criticism/2026-09-07-gpt6-five-site-critic-all-dimensional-02/attachments/0008__ALL_DIMENSIONAL_INDEPENDENT_AUDIT_2026-09-07.md",
+      "bytes": 53633,
+      "sha256": "b35eb05dab8ba95662906f6b782d0e0c3e78b4ac91b6ede99fa3ac593e2e8aee",
+      "byte_identical": true
+    },
+    {
+      "local_path": "docs/sources/CORE_PROOF.md",
+      "original": "portfolio/programs/gaussian-extremal-theory/post-solution/CORE_PROOF.md",
+      "bytes": 15928,
+      "sha256": "50e2ee91b25eabcfeeb1861c98b1d112ce83fe6d6d729f7c9a9dd77b6fdc6b5d",
+      "byte_identical": true
+    },
+    {
+      "local_path": "docs/sources/COMPONENTWISE_COMPARISON.md",
+      "original": "portfolio/programs/gaussian-extremal-theory/post-solution/COMPONENTWISE_COMPARISON.md",
+      "bytes": 19337,
+      "sha256": "28d262a7b96ee8cb72e474fc9980700c6c8bb9e420572ff49ea1920faf3a4892",
+      "byte_identical": true
+    }
+  ],
+  "notes": [
+    "Original source hyperlinks retain their research-repository topology; docs/sources/README.md maps the operative proof dependencies.",
+    "The teaching source is the full 2206-line returned manuscript, not the 31-line research navigation wrapper.",
+    "No original WSC Lean implementation source is vendored; WSC is a pinned dependency with its own license."
+  ]
+}

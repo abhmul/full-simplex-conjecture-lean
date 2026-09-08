@@ -1,0 +1,362 @@
+{
+  "schema_version": 1,
+  "packages": [
+    {
+      "id": "WP00",
+      "title": "Pinned bootstrap and evidence tooling",
+      "dependencies": [],
+      "owned_files": [
+        "lakefile.toml",
+        "lake-manifest.json",
+        "lean-toolchain",
+        "FSC.lean",
+        "scripts/",
+        "FSCProbes.lean",
+        "FSCProbes/Algebra.lean",
+        "FSCProbes/Imports.lean",
+        "FSCProbes/Audit.lean"
+      ],
+      "status": "bootstrap-in-progress",
+      "owner": null
+    },
+    {
+      "id": "WP01",
+      "title": "Public definitions and coupled interface freeze",
+      "dependencies": [
+        "WP00"
+      ],
+      "owned_files": [
+        "FSC/Definitions.lean",
+        "FSC/Gaussian/PinDefinitions.lean",
+        "FSC/Support/Definitions.lean",
+        "FSC/Analysis/Definitions.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP02",
+      "title": "All-PSD affine laws and ordinary Gram realization",
+      "dependencies": [
+        "WP01"
+      ],
+      "owned_files": [
+        "FSC/Gaussian/AffineLaw.lean",
+        "FSC/LinearAlgebra/Gram.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP03",
+      "title": "Canonical one-pin law",
+      "dependencies": [
+        "WP02"
+      ],
+      "owned_files": [
+        "FSC/Gaussian/SinglePin.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP04",
+      "title": "Canonical pair law, weights and general row positivity",
+      "dependencies": [
+        "WP03"
+      ],
+      "owned_files": [
+        "FSC/Gaussian/PairLaw.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP05",
+      "title": "Finite Gaussian support C1 neighborhoods",
+      "dependencies": [
+        "WP03"
+      ],
+      "owned_files": [
+        "FSC/Support/Differentiation.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP06",
+      "title": "Support quadratic tangent from Prekopa",
+      "dependencies": [
+        "WP01"
+      ],
+      "owned_files": [
+        "FSC/Support/QuadraticTangent.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP07",
+      "title": "Threshold Hessian and Peano expansion",
+      "dependencies": [
+        "WP04",
+        "WP05"
+      ],
+      "owned_files": [
+        "FSC/Gaussian/ThresholdExpansion.lean",
+        "FSC/Analysis/Peano.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP08",
+      "title": "Bounded finite-second-moment noise averaging",
+      "dependencies": [
+        "WP01"
+      ],
+      "owned_files": [
+        "FSC/Analysis/NoiseAveraging.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP09",
+      "title": "Universal normalized PSD-addition derivative",
+      "dependencies": [
+        "WP02",
+        "WP07",
+        "WP08"
+      ],
+      "owned_files": [
+        "FSC/Gaussian/FeasibleVariation.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP10",
+      "title": "Singular analytic integration probe",
+      "dependencies": [
+        "WP03",
+        "WP04",
+        "WP05",
+        "WP07",
+        "WP08"
+      ],
+      "owned_files": [
+        "FSCProbes/SingularTriangle.lean",
+        "FSCProbes/BoundaryControls.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP11",
+      "title": "Unbounded dilation, energy and exact padding",
+      "dependencies": [
+        "WP01",
+        "WP02"
+      ],
+      "owned_files": [
+        "FSC/Support/Dilation.lean",
+        "FSC/Support/Padding.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP12",
+      "title": "Singular rank-padded Gram and tangent realization",
+      "dependencies": [
+        "WP02"
+      ],
+      "owned_files": [
+        "FSC/LinearAlgebra/PaddedGram.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP13",
+      "title": "All-correlation CDF continuity and compactness",
+      "dependencies": [
+        "WP02"
+      ],
+      "owned_files": [
+        "FSC/Gaussian/CDFContinuity.lean",
+        "FSC/Compactness.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP14",
+      "title": "Componentwise scalar comparison and equality",
+      "dependencies": [
+        "WP01"
+      ],
+      "owned_files": [
+        "FSC/Scalar/Componentwise.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP15",
+      "title": "Finite row tests and signed loss rigidity",
+      "dependencies": [
+        "WP04",
+        "WP09"
+      ],
+      "owned_files": [
+        "FSC/Minimizers/FiniteDirections.lean",
+        "FSC/Scalar/RowLoss.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP16",
+      "title": "Facet compatibility and padded component identities",
+      "dependencies": [
+        "WP04",
+        "WP05",
+        "WP11",
+        "WP12"
+      ],
+      "owned_files": [
+        "FSC/Facet/Compatibility.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP17",
+      "title": "Simplex conditional recursion and repeated-direction reference",
+      "dependencies": [
+        "WP02",
+        "WP03",
+        "WP05"
+      ],
+      "owned_files": [
+        "FSC/Simplex/Recursion.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP18",
+      "title": "Duplicate and positive-definite exclusions",
+      "dependencies": [
+        "WP04",
+        "WP09",
+        "WP13"
+      ],
+      "owned_files": [
+        "FSC/Minimizers/Exclusions.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP19",
+      "title": "Minimizer slope comparison and rigidity",
+      "dependencies": [
+        "WP06",
+        "WP14",
+        "WP15",
+        "WP16",
+        "WP17",
+        "WP18"
+      ],
+      "owned_files": [
+        "FSC/Minimizers/SlopeRigidity.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP20",
+      "title": "Abstract compact strict barrier",
+      "dependencies": [
+        "WP01"
+      ],
+      "owned_files": [
+        "FSC/Threshold/LinearBarrier.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP21",
+      "title": "Two-site base and nonpositive thresholds",
+      "dependencies": [
+        "WP02"
+      ],
+      "owned_files": [
+        "FSC/Simplex/BaseCases.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP22",
+      "title": "All-dimensional comparison",
+      "dependencies": [
+        "WP13",
+        "WP19",
+        "WP20",
+        "WP21"
+      ],
+      "owned_files": [
+        "FSC/Comparison.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP23",
+      "title": "Positive-threshold equality and strictness",
+      "dependencies": [
+        "WP19",
+        "WP21",
+        "WP22"
+      ],
+      "owned_files": [
+        "FSC/Equality.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP24",
+      "title": "Measure and finite-maximum public wrappers",
+      "dependencies": [
+        "WP22",
+        "WP23"
+      ],
+      "owned_files": [
+        "FSC/Main.lean"
+      ],
+      "status": "planned",
+      "owner": null
+    },
+    {
+      "id": "WP25",
+      "title": "Independent statement and clean-checkout acceptance",
+      "dependencies": [
+        "WP24",
+        "WP10"
+      ],
+      "owned_files": [
+        "FSC/Audit.lean",
+        "docs/RELEASE_AUDIT.md",
+        "checks/release/"
+      ],
+      "status": "planned",
+      "owner": null
+    }
+  ]
+}
