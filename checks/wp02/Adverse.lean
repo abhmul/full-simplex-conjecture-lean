@@ -34,8 +34,8 @@ theorem addition_parameter_zero {n : ℕ} (G L : FSC.Mat n)
   simpa only [zero_smul, add_zero] using
     FSC.map_add_sqrt_smul_multivariateGaussian G L hG hL 0 le_rfl
 
-#print axioms affine_zero_covariance
-#print axioms addition_zero_noise
-#print axioms addition_parameter_zero
+#print axioms FSCChecks.affine_zero_covariance
+#print axioms FSCChecks.addition_zero_noise
+#print axioms FSCChecks.addition_parameter_zero
 
 end FSCChecks

@@ -2,7 +2,7 @@
 
 The initial graph had 26 packages (WP00–WP25). Actual importing consumers justified extracting the generic input-coordinate calculus (WP26) and vector-domain Peano bridge (WP27), so the concrete singular probe could close before universal threshold calculus. The count is neither a quota nor a limit. Refine package size when compiler evidence warrants it; preserve mathematical contracts and record changed dependencies.
 
-Status at the user-requested travel pause: WP00–WP18, WP20, WP21, WP26 and WP27 have reviewed, freshly audited implementations integrated by the lead. This includes the universal actual normalized PSD-addition derivative with Peano/Hessian inputs discharged, exact physical padded energy and both minimizer exclusions. WP19 slope comparison/rigidity core compiles but remains uninstalled/unaudited pending its minimum wrappers; the final comparison/equality/wrapper assemblies and release acceptance remain open. See RESUME.md, cards and IMPLEMENTATION_LOG.md. No final FSC theorem is certified yet.
+Current status after explicit user resumption: WP00–WP24, WP26 and WP27 have compiled, independently reviewed and freshly audited implementations. The public comparison, positive-threshold equality/strictness and actual Gaussian event/maximum wrappers are installed. WP25 final release acceptance is running; artifact-free clean-checkout reproduction remains open. See STATE.md and the cards; RESUME.md preserves the historical travel checkpoint.
 
 | Package | Responsibility | Dependencies |
 | --- | --- | --- |

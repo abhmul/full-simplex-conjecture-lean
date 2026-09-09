@@ -27,6 +27,6 @@ theorem emptyComponentCounterexample :
     fin_cases i <;> norm_num [Fin.sum_univ_two]
   · norm_num [Fin.sum_univ_two]
 
-#print axioms emptyComponentCounterexample
+#print axioms FSCChecks.emptyComponentCounterexample
 
 end FSCChecks

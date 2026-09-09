@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "revision": "c5132e4e28f112d703757c531b310d3d22861371",
+  "tree": "5852f8b1315feb00abc4fb777134fd4d0e4ec807",
+  "cwd": "/home/abhmul/dev/full-simplex-conjecture-lean",
+  "initial_source_status": "M FSC.lean\n M FSC/Equality.lean\n M FSC/Minimizers/SlopeRigidity.lean\n M README.md\n M docs/PUBLIC_CONTRACT.md\n M docs/RESUME.md\n M docs/STATE.md\n M docs/WORK_PACKAGES.json\n M docs/WORK_PACKAGES.md\n M docs/work-packages/WP19.md\n M docs/work-packages/WP22.md\n M docs/work-packages/WP23.md\n M docs/work-packages/WP24.md\n M docs/work-packages/WP25.md\n?? FSC/Audit.lean\n?? FSC/Comparison.lean\n?? FSC/Main.lean\n?? checks/equality-install.log\n?? checks/main-install.log\n?? checks/maximum-install.log\n?? checks/release/\n?? checks/slope-rigidity-install.log\n?? checks/wp19/\n?? checks/wp22-comparison-build.log\n?? checks/wp22-comparison-failed-first.log\n?? checks/wp22-comparison-install.log\n?? checks/wp22/\n?? checks/wp23/\n?? checks/wp24/\n?? docs/work-packages/WP25-provenance-review.md\n?? docs/work-packages/WP25-runner-review.md\n?? docs/work-packages/WP25-statement-review.md\n?? scripts/verify_release.py",
+  "passed": false,
+  "environment_controls": {
+    "LEAN_NUM_THREADS": "2",
+    "LAKE_NO_CACHE": "true",
+    "LAKE_ARTIFACT_CACHE": "false",
+    "LAKE_CACHE_DIR": "",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "required_endpoints": [
+    "FSC.cdf_simplex_le",
+    "FSC.cdf_eq_simplex_iff",
+    "FSC.cdf_simplex_lt",
+    "FSC.lowerOrthant_simplex_le",
+    "FSC.coordinateMax_tail_le_simplex",
+    "FSC.coordinateMax_tail_lt_simplex",
+    "FSC.coordinateMax_tail_eq_simplex_iff",
+    "FSC.cdf_eq_measure",
+    "FSC.simplex_eq_scaled_matrix",
+    "FSC.cdf_eq_probability_coordinateMax_le",
+    "FSC.hasDerivWithinAt_normalizedAdd",
+    "FSC.peano2_thresholdCDF",
+    "FSC.thresholdHessian_apply",
+    "FSC.capEnergy_padded_eq",
+    "FSC.componentwise_compare",
+    "FSC.componentwise_equality"
+  ],
+  "commands": [
+    {
+      "label": "lean-version",
+      "command": [
+        "lake",
+        "--no-cache",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.9637687750000623,
+      "log": "lean-version.log",
+      "sha256": "dd8559b23a42ea624730facdf2d7e4acbc573f5abb02cf5a5b1a6e99432c620b"
+    },
+    {
+      "label": "lake-version",
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 0.1116142519999812,
+      "log": "lake-version.log",
+      "sha256": "505c28438dd7c4f3782bcf74a5be56648cb3b682ca60cfaeac71b569a2b89985"
+    },
+    {
+      "label": "full-build",
+      "command": [
+        "lake",
+        "--no-cache",
+        "build",
+        "FSC",
+        "FSCProbes",
+        "--wfail"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 6.535904776000052,
+      "log": "full-build.log",
+      "sha256": "728d578d4c8335594e6c3c56dfce761c5ee42549f45d234791d60da5c40ca4bd"
+    },
+    {
+      "label": "public-root",
+      "command": [
+        "lake",
+        "--no-cache",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "FSC.lean"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 3.1151272699999026,
+      "log": "public-root.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "public-axioms",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "FSC/Audit.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/public-axioms.jsonl",
+        "--required",
+        "FSC.cdf_simplex_le",
+        "--required",
+        "FSC.cdf_eq_simplex_iff",
+        "--required",
+        "FSC.cdf_simplex_lt",
+        "--required",
+        "FSC.lowerOrthant_simplex_le",
+        "--required",
+        "FSC.coordinateMax_tail_le_simplex",
+        "--required",
+        "FSC.coordinateMax_tail_lt_simplex",
+        "--required",
+        "FSC.coordinateMax_tail_eq_simplex_iff",
+        "--required",
+        "FSC.cdf_eq_measure",
+        "--required",
+        "FSC.simplex_eq_scaled_matrix",
+        "--required",
+        "FSC.cdf_eq_probability_coordinateMax_le",
+        "--required",
+        "FSC.hasDerivWithinAt_normalizedAdd",
+        "--required",
+        "FSC.peano2_thresholdCDF",
+        "--required",
+        "FSC.thresholdHessian_apply",
+        "--required",
+        "FSC.capEnergy_padded_eq",
+        "--required",
+        "FSC.componentwise_compare",
+        "--required",
+        "FSC.componentwise_equality"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 3.151331824999943,
+      "log": "public-axioms.log",
+      "sha256": "c983cb0bb13d8d578420526fa9ef048cb05b9e5b33664b0221dd0fa04e5860ee"
+    },
+    {
+      "label": "independent-statements",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "checks/release/IndependentStatements.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/independent-statements.jsonl",
+        "--required",
+        "FSCChecks.IndependentStatements.comparison_expanded",
+        "--required",
+        "FSCChecks.IndependentStatements.equality_expanded",
+        "--required",
+        "FSCChecks.IndependentStatements.strict_comparison_expanded",
+        "--required",
+        "FSCChecks.IndependentStatements.tail_comparison_expanded",
+        "--required",
+        "FSCChecks.IndependentStatements.strict_tail_comparison_expanded",
+        "--required",
+        "FSCChecks.IndependentStatements.tail_equality_expanded"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 3.420709837000004,
+      "log": "independent-statements.log",
+      "sha256": "1dffefe1d7753d80447ae6ea7e12100be19dfe8334cd4c6a5c23e817a450ef56"
+    },
+    {
+      "label": "regression-FSCProbes-Audit",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "FSCProbes/Audit.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-FSCProbes-Audit.jsonl"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 2.726851520000082,
+      "log": "regression-FSCProbes-Audit.log",
+      "sha256": "c7f37adbac042f54ed968dfe51b1420a594afbbd7f7a5f7b685bce926c3bf7f0"
+    },
+    {
+      "label": "regression-FSCProbes-FeasibleVariationAudit",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "FSCProbes/FeasibleVariationAudit.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-FSCProbes-FeasibleVariationAudit.jsonl"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 3.2890864159999182,
+      "log": "regression-FSCProbes-FeasibleVariationAudit.log",
+      "sha256": "1dffefe1d7753d80447ae6ea7e12100be19dfe8334cd4c6a5c23e817a450ef56"
+    },
+    {
+      "label": "regression-FSCProbes-SingularTriangleAudit",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "FSCProbes/SingularTriangleAudit.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-FSCProbes-SingularTriangleAudit.jsonl"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 3.4084850960000495,
+      "log": "regression-FSCProbes-SingularTriangleAudit.log",
+      "sha256": "92aa2ff8081c0c3ac575f2e8dca5f04589d27caa2185c1905b132b843fe3e0d2"
+    },
+    {
+      "label": "regression-FSCProbes-ThresholdExpansionAudit",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "FSCProbes/ThresholdExpansionAudit.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-FSCProbes-ThresholdExpansionAudit.jsonl"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 3.028752188999988,
+      "log": "regression-FSCProbes-ThresholdExpansionAudit.log",
+      "sha256": "b8b4e40d89b912ccb71fe0ea194dbe106e645c33f0d33608d144ab3f5081bcfa"
+    },
+    {
+      "label": "regression-FSCProbes-TriangleThresholdAudit",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "FSCProbes/TriangleThresholdAudit.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-FSCProbes-TriangleThresholdAudit.jsonl"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 3.351228686000013,
+      "log": "regression-FSCProbes-TriangleThresholdAudit.log",
+      "sha256": "bedf43cd8516206e3165f974aa682804bd4d03f5db16d024a02f98dcf10bc5c9"
+    },
+    {
+      "label": "regression-FSCProbes-TriangleVariationAudit",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "FSCProbes/TriangleVariationAudit.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-FSCProbes-TriangleVariationAudit.jsonl"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 3.4817466889999196,
+      "log": "regression-FSCProbes-TriangleVariationAudit.log",
+      "sha256": "d628954db8a94ea72937fd2cbcf5377197a83c6e44ebd0adc30bfaca967aa152"
+    },
+    {
+      "label": "regression-FSCProbes-UniversalAnalyticAdversesAudit",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "FSCProbes/UniversalAnalyticAdversesAudit.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-FSCProbes-UniversalAnalyticAdversesAudit.jsonl"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 3.5570113200001288,
+      "log": "regression-FSCProbes-UniversalAnalyticAdversesAudit.log",
+      "sha256": "a106cb92435f52c1ff547dd54c3cb6e60356781c561b1d0df29791c605712290"
+    },
+    {
+      "label": "regression-checks-release-PairFrontierAdverse",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "checks/release/PairFrontierAdverse.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-checks-release-PairFrontierAdverse.jsonl"
+      ],
+      "exit": 0,
+      "expected_exit": 0,
+      "elapsed_seconds": 4.003362827000046,
+      "log": "regression-checks-release-PairFrontierAdverse.log",
+      "sha256": "13fb73bbb7e4196ef0d8706031d5027faaa658a457982e8c564bbdcb85e76bdd"
+    },
+    {
+      "label": "regression-checks-wp02-Adverse",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "checks/wp02/Adverse.lean",
+        "--save-json",
+        "/home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-checks-wp02-Adverse.jsonl"
+      ],
+      "exit": 1,
+      "expected_exit": 0,
+      "elapsed_seconds": 2.974132719999943,
+      "log": "regression-checks-wp02-Adverse.log",
+      "sha256": "0532e250d282b32353aa3d45a0aa4bf6f2957b6d7d7be3f22adddf9718cfec9f"
+    }
+  ],
+  "pin_files_before": {
+    "lean-toolchain": "efac0b94923b2d8b6840cd35be9177ad0fc5ab2332f4f4311c98712cee92fdee",
+    "lakefile.toml": "18fa1bb5ecc21b8aa59c55124432d5bb820b6683687ade13aa299f4d3b997cbc",
+    "lake-manifest.json": "a400ad3d146cc784cdc1643e3637886184ac5e7a937045b5611589cc1bc8ba4b"
+  },
+  "pins_before": [
+    {
+      "name": "mathlib",
+      "expected": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "actual": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "source_status": ""
+    },
+    {
+      "name": "weak-simplex-conjecture-lean",
+      "expected": "a204c53cae45652d12524132dbb9a2e0ffe8cf78",
+      "actual": "a204c53cae45652d12524132dbb9a2e0ffe8cf78",
+      "source_status": ""
+    },
+    {
+      "name": "plausible",
+      "expected": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "actual": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "source_status": ""
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "actual": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "source_status": ""
+    },
+    {
+      "name": "importGraph",
+      "expected": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "actual": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "source_status": ""
+    },
+    {
+      "name": "proofwidgets",
+      "expected": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "actual": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "source_status": ""
+    },
+    {
+      "name": "aesop",
+      "expected": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "actual": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "source_status": ""
+    },
+    {
+      "name": "Qq",
+      "expected": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "actual": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "source_status": ""
+    },
+    {
+      "name": "batteries",
+      "expected": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "actual": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "source_status": ""
+    },
+    {
+      "name": "Cli",
+      "expected": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "actual": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "source_status": ""
+    }
+  ],
+  "lean_source_sha256": {
+    "FSC/Analysis/Definitions.lean": "841cc65477834c009ca3efa94278f0a841cc7d00174d3492d56910a66823b20c",
+    "FSC/Analysis/FeasibleVariation.lean": "eaf60fc0aee64618f1b4a707f70563a964342274c7b8e33be11012c7fe8d7877",
+    "FSC/Analysis/FinitePartialDerivatives.lean": "644663b75209dbb1ca02b0c2f547000da485714ffa9778a17df76b3477d5076a",
+    "FSC/Analysis/NoiseAveraging.lean": "eeb79b0ed3a23e113c8ba6bc5a797787e837ca70926d7af56e0a158e4cc360f0",
+    "FSC/Analysis/PartialDerivatives.lean": "67e3782c5ceb4185d5dac9fe0c2c9c2b90f9c1773cab4e6b4206b9199b44cd16",
+    "FSC/Analysis/PeanoTaylor.lean": "b24a96a565a3d0a7630a5f6146cca59b54c677f5c10520812450e3a1fcd1f440",
+    "FSC/Audit.lean": "548be6d65a52e99d766938cbecccf9f850f4ee83e749486a41ab54b7f3f08962",
+    "FSC/Compactness.lean": "0181e2de5b9b3ea50d58644812e5ed11a844aac6c963575b88bd828a96b3aeed",
+    "FSC/Comparison.lean": "e0c57aa40de997e4a7dd9d49bb884837423982e1e5c51563dbfcbeee9a222731",
+    "FSC/Definitions.lean": "38aa259fffdafb3d05b18ab0947e0fd151b25fd7602e94ed0ba69ae6190085e0",
+    "FSC/Equality.lean": "b9359b1a8630148cc14e3913bcad313a0ed33564112355361edb038eabff81df",
+    "FSC/Facet/Compatibility.lean": "c122ea7ac7436414d1a3d9ef9864039868f724fa66fd4a8af3bc90daa0528f66",
+    "FSC/Facet/PaddedNormals.lean": "558f8bbf7a7132862817cc0f682b8b38b8c49e21e6fd2e259fe99ccb01ac9aac",
+    "FSC/Gaussian/AffineLaw.lean": "88f54ccc3af63bd95e6a7a423a170c8fe81ad54aca7f67f0a00b2eafb8f52f1a",
+    "FSC/Gaussian/CDFContinuity.lean": "00b09d108e037b5ccfc8c8060a329dd45711c19f6bebabc288dce5101380cd1c",
+    "FSC/Gaussian/ConditionalCaps.lean": "ca8cc4269b21ba3fd52e2ed0b866c4beffdbffa9b887f1e66063f1b1a04eadbe",
+    "FSC/Gaussian/IndependentSum.lean": "8069c83e08582d50b4c6cc32b172a41af6d0a7481ceb89c7e0a004df40934acd",
+    "FSC/Gaussian/Maximum.lean": "58e7c719fb9f68e70c4ce2bafeb288ab9e6b3d9b21b09f008944d4529d3fbae0",
+    "FSC/Gaussian/NormalizedAddition.lean": "15604bbad31f811d77c44263b05af95e174f3fd885809b519e8befced43db073",
+    "FSC/Gaussian/PairLaw.lean": "12fdfea50208351015b700b21adeb726dee785b9508889169eefd1d1b09de0bf",
+    "FSC/Gaussian/PairWeights.lean": "f22bb8e36a2d6321c1f5391460b8aea121ab0246198f48798f1423731c4ed802",
+    "FSC/Gaussian/PinDefinitions.lean": "52f734d3c27c59633c02df7b244e838729df878d2276414579ff5178adee57c0",
+    "FSC/Gaussian/ProjectedNormals.lean": "7cd070c9e59c9397e68131264e49972953c37f935665590b18962ac42ce1e2e1",
+    "FSC/Gaussian/Replacement.lean": "6f78524b4280aca22adf701bc084a34b1b387f14fc5004b39a79ba5017b03169",
+    "FSC/Gaussian/SinglePin.lean": "21d7971ab4ca2aa4cf8c6edb01bb551a32716e2483e2f37554ad4ec9ca729b04",
+    "FSC/Gaussian/StandardDensity.lean": "521c45c94ad4ea9e6ac4de88827a19dcfef5f74168b228b13b3e1f2f61c81d64",
+    "FSC/Gaussian/SubspaceGaussian.lean": "f3457768cd1f1210021645011fa23e93029b101828ee54e2ce2f049380b8141b",
+    "FSC/Gaussian/ThresholdExpansion.lean": "75b64c46d00ca9aa4dee90c060a5ae82d116997cc07f4df9de40c24ba5900f57",
+    "FSC/LinearAlgebra/Gram.lean": "2ca4df935baccd05b8dbddacfa18c62c44b64e1c8d9a9f708d429d1411b01b19",
+    "FSC/LinearAlgebra/PaddedGram.lean": "2556f8aab0d6cf18eebb5f851f85978180cca178304aa9f81cfa4994fe8f1beb",
+    "FSC/Main.lean": "8cc5d0d0a53e7027b25a3e48a40167314a7e322b1a40c63d4668b2adfc9a9c20",
+    "FSC/Minimizers/Exclusions.lean": "8a6a3adb9cc4156b294dc1a319dcaf4ddeebdc8876238b65faf2b6b0a7fa5a63",
+    "FSC/Minimizers/FiniteDirections.lean": "fad16273d9bfbc67a01a903f9733d0b9603b9f5d0840532e4a9bcba06ce4772e",
+    "FSC/Minimizers/SlopeRigidity.lean": "c1b5bfa279230d3b35dbc0b88745221bc0b79128b7115a7f071801274ddef1a6",
+    "FSC/Scalar/Componentwise.lean": "c4ff85d3922ff71a120d960603b631720a06facad10bfafcaedbd897035dbd30",
+    "FSC/Scalar/RowLoss.lean": "257ec9c3e109bb699502adc262f266e815b22fce7aac53f81a18d6f01883557c",
+    "FSC/Simplex/BaseCases.lean": "e4fbc657ddd505917b4b4278826454fe811663b6e8409af5f37f0d9998f2e6e3",
+    "FSC/Simplex/Definitions.lean": "b8680158f522c9d2b40438bcb7aa4235d1bf1d26975dfc6d8882deab1a8366e2",
+    "FSC/Simplex/Recursion.lean": "7ef44754ac75caa26a916d4be366ed19fdb051244bb0dd0d970511b4070fd2f8",
+    "FSC/Support/Definitions.lean": "aded50fde42425ec7e93c45333f5406ee46a7f750287d263fc55142fb515bd96",
+    "FSC/Support/Differentiation.lean": "616a2c9b273e47be62b72ab5ef14a154a4707b4714a86801718e13764b16e845",
+    "FSC/Support/Dilation.lean": "b36b1adfa7fbcc92408c99874ff3e4023968d826b6fa5e9cf0991c1aacba3db8",
+    "FSC/Support/GramInvariance.lean": "d4161320fa33c69a5acb4cc64e33d84850aa4ca234f5af7a35775f4618ae65e8",
+    "FSC/Support/Padding.lean": "6afb18265eb4b5abde55be126d6a0d1a546796bedc7a7737dd9ff8e5bc44293e",
+    "FSC/Support/QuadraticTangent.lean": "4292b223f3ef570c69bafe686109da25e6533540def13ff4ce7d93851e05b478",
+    "FSC/Support/Slicing.lean": "6d6c0df1ad29dfd42b5722dd17f70894c1544110c957fe888d64085e725c30f0",
+    "FSC/Threshold/LinearBarrier.lean": "e808f38ad8c6b0dca0802df108bc10beca1938380f66804e6d7c3f79d6e82340",
+    "FSC.lean": "2914a43b2ff05422c6befe89b15e1d530be54be76c1cfd3e8554d8c8023df55d",
+    "FSCProbes/Algebra.lean": "cf59ed3f4c77765a040f120d7dc32694a6ddf1e7238db267b01221a424690704",
+    "FSCProbes/Audit.lean": "31492240c2112023914d6de7d9bb0d35384a10bfa14661514c061c74ae3f65bc",
+    "FSCProbes/FeasibleVariationAudit.lean": "8d60897272dbdb49b6c7201bdcb8db0e011011e26cdee5ef8e8956a062fcc3b7",
+    "FSCProbes/Imports.lean": "571f9c69995c5ec887d7083300fd901c1fdc76da7323090f8ce0b45493c001fc",
+    "FSCProbes/SingularTriangle.lean": "b5ba6a46be6a18710708f9486739d6e01bfd54b89dce27f206df47003ad103b5",
+    "FSCProbes/SingularTriangleAudit.lean": "e2c2a3ed072699faab1d9b187f4fb530d1d36241cba6fddcfe2823ebf5e260e3",
+    "FSCProbes/ThresholdExpansionAudit.lean": "916c69c86ebdfeec532208033d4d443b05f675589293ada975873b1d4cecb247",
+    "FSCProbes/TriangleThreshold.lean": "72cceffc325daef2e5b5cb5fe9bad6657fd95e37a091cd27ae6f230f2c5159c4",
+    "FSCProbes/TriangleThresholdAudit.lean": "9a29c39f5c19c5326fa68d7c21e3354dc184fda119a400bd1dfff8de43e6a239",
+    "FSCProbes/TriangleVariation.lean": "75342f8e1867342454d90eb54d2788b200ff0b8b43fff91770c890df6df382e4",
+    "FSCProbes/TriangleVariationAudit.lean": "2e9597e831f0be64a506c29ec318379ac11246aff2269c43741c102c35ce0aa6",
+    "FSCProbes/UniversalAnalyticAdverses.lean": "f0e8c052c88cd620fc95dfb9d7aa5f7f2e73f3ce53f9571a992532df69be2739",
+    "FSCProbes/UniversalAnalyticAdversesAudit.lean": "87614ed77779d4eb2d8aee3cc5869add9f2687be24ae94fb3037f2b768e6ec60",
+    "FSCProbes.lean": "60fb4ec06152a52a82664498fd8db717ad0833fc8bbb6e4a4b64d7d8057f6c72"
+  },
+  "error": "regression-checks-wp02-Adverse: expected 0, got 1; see /home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-checks-wp02-Adverse.log"
+}

@@ -295,8 +295,8 @@
       "owned_files": [
         "FSC/Minimizers/SlopeRigidity.lean"
       ],
-      "status": "in-progress",
-      "owner": "analytic_preflight"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP20",
@@ -335,7 +335,7 @@
       "owned_files": [
         "FSC/Comparison.lean"
       ],
-      "status": "in-progress",
+      "status": "integrated",
       "owner": "root"
     },
     {
@@ -349,8 +349,8 @@
       "owned_files": [
         "FSC/Equality.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_algebra"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP24",
@@ -363,8 +363,8 @@
         "FSC/Main.lean",
         "FSC/Gaussian/Maximum.lean"
       ],
-      "status": "in-progress",
-      "owner": "wp00_imports"
+      "status": "integrated",
+      "owner": "root"
     },
     {
       "id": "WP25",
@@ -378,8 +378,8 @@
         "docs/RELEASE_AUDIT.md",
         "checks/release/"
       ],
-      "status": "planned",
-      "owner": null
+      "status": "in-progress",
+      "owner": "root"
     },
     {
       "id": "WP26",

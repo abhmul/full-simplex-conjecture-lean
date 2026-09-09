@@ -1,0 +1,10 @@
+ℹ [2/7] Built Probe.P0 (780ms)
+info: Probe/P0.lean:3:0: FSC_CONCURRENCY 0 1554864 1555365
+ℹ [3/7] Built Probe.P1 (917ms)
+info: Probe/P1.lean:3:0: FSC_CONCURRENCY 1 1555781 1556281
+ℹ [4/7] Built Probe.P2 (853ms)
+info: Probe/P2.lean:3:0: FSC_CONCURRENCY 2 1556636 1557136
+ℹ [5/7] Built Probe.P3 (797ms)
+info: Probe/P3.lean:3:0: FSC_CONCURRENCY 3 1557430 1557931
+✔ [6/7] Built Probe (277ms)
+Build completed successfully (7 jobs).

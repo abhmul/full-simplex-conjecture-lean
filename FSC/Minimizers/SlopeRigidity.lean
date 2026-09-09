@@ -4,6 +4,7 @@ import FSC.Scalar.Componentwise
 import FSC.Scalar.RowLoss
 import FSC.Simplex.Recursion
 import FSC.Gaussian.CDFContinuity
+import FSC.Minimizers.Exclusions
 
 /-! Actual conditional geometry, scalar mass comparison and boundary rigidity.
 Source: reviewed DOSSIER section 2 and CORE_PROOF sections 1-4. -/
@@ -238,5 +239,28 @@ theorem boundarySlope_eq_simplex_of_tests {n : ℕ} (hn : 3 ≤ n) (G : Mat n)
   exact correlation_eq_simplex_of_uniform_rows hn G hG hd t ht hTest (fun i ↦ (hu i).1)
     (fun i ↦ rowRatio_eq_reference_of_uniform hn G hG hd t ht i _ hp (hTest i)
       (hfloor i) (hu i).1 (hu i).2)
+
+/-- Actual minima discharge distinctness, singularity and every finite directional test. -/
+theorem boundarySlope_simplex_le_of_minimum {n : ℕ} (hn : 3 ≤ n) (G : Mat n)
+    (hG : WeakSimplex.IsCorrelation G) (t : ℝ) (ht : 0 < t)
+    (hmin : ∀ H : Mat n, WeakSimplex.IsCorrelation H → cdf G t ≤ cdf H t)
+    (hcompare : ∀ H : Mat (n - 1), WeakSimplex.IsCorrelation H →
+      cdf (simplex (n - 1)) (t / referenceRatio n) ≤ cdf H (t / referenceRatio n)) :
+    boundarySlope (simplex n) t ≤ boundarySlope G t := by
+  obtain ⟨hd, hnotPD⟩ := cdf_minimum_distinct_not_posDef hn G hG t ht hmin
+  exact boundarySlope_simplex_le_of_tests hn G hG hd hnotPD t ht
+    (finite_row_test_bound hn G hG hd t ht hmin) hcompare
+
+/-- Lower-size comparison alone suffices for rigidity at an actual shape minimum. -/
+theorem eq_simplex_of_boundarySlope_eq_of_minimum {n : ℕ} (hn : 3 ≤ n) (G : Mat n)
+    (hG : WeakSimplex.IsCorrelation G) (t : ℝ) (ht : 0 < t)
+    (hmin : ∀ H : Mat n, WeakSimplex.IsCorrelation H → cdf G t ≤ cdf H t)
+    (hcompare : ∀ H : Mat (n - 1), WeakSimplex.IsCorrelation H →
+      cdf (simplex (n - 1)) (t / referenceRatio n) ≤ cdf H (t / referenceRatio n))
+    (hslope : boundarySlope G t = boundarySlope (simplex n) t) :
+    G = simplex n := by
+  obtain ⟨hd, hnotPD⟩ := cdf_minimum_distinct_not_posDef hn G hG t ht hmin
+  exact boundarySlope_eq_simplex_of_tests hn G hG hd hnotPD t ht
+    (finite_row_test_bound hn G hG hd t ht hmin) hcompare hslope
 
 end FSC

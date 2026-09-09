@@ -1,5 +1,15 @@
 # Implementation log
 
+## Resumed final theorem integration
+
+After the user explicitly resumed, root verified clean c5132e4 and continued WP19–WP25. WP19 minimum wrappers discharge distinctness, non-PD and finite row tests from the actual global minimum. WP22 now proves every-dimensional/all-real comparison by strong induction using only lower-size comparison and the actual compact barrier. WP23 obtains equality rigidity from the proved comparison and positive contact differentiation. WP24 exposes actual Gaussian-event and finite-maximum tail le/lt/iff endpoints. All final sources have independent reviews and fresh permitted-axiom receipts. The public root imports Main; the former empty/bootstrap labels remain historical only.
+
+Fresh final-endpoint audit passed 45 declarations, including all seven public endpoints, with only propext/Classical.choice/Quot.sound. Independent importing consumers expand PSD/unit diagonal, Euclidean Gaussian event, real denominator and constant-one matrix, and replace the maximum tail with the literal existential exceedance event. Their fresh audit passed 17 declarations. The documented full-index pair-law frontier counterexample was the one missing adverse consumer found during review; the actual triangle pair law now proves that frontier has mass one. Its fresh four-declaration audit and two source reviews passed.
+
+The complete acceptance runner deliberately rejected the first whole-suite run: early WP02 adverse commands used unqualified names inside a namespace, whereas Lean's actual reports use fully qualified names. The allowed-axiom reports were mathematically clean but failed exact name coverage. Only the #print commands were qualified in WP02, WP03 and WP14; proof bodies and the fail-closed parser are unchanged. Failed output is retained in checks/release/current-gates. A fresh whole-suite rerun is required before acceptance.
+
+Independent runner review strengthened optimized-Python rejection, fresh evidence directories, startup compiled-artifact detection, expanded-consumer auditing, fixed regression coverage and final source identity checks. Exact Lake source and actual overlap probes support process-local cache suppression and LEAN_NUM_THREADS=2. The planned clean reproduction uses new independent Git source clones at the final committed revision and all ten exact pins, with no working-tree artifacts copied. Publication/external acceptance remain separate. The final source-build receipt is still pending.
+
 ## 2026-09-08: implementation lead appointed
 
 The user appointed `/root` as sole integration and Git owner and authorized an unbudgeted implementation goal. Initial checkout: `449f42623d7442b27bff20df165bb9829196b67c`, clean. Verified Lean 4.31.0 (`68218e876d2a38b1985b8590fff244a83c321783`), WSC `a204c53cae45652d12524132dbb9a2e0ffe8cf78`, and mathlib `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f`. No Lean LSP tool is exposed; use actual compiler diagnostics. No global configuration changes.

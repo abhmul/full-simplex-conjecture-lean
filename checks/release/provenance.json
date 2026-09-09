@@ -1,0 +1,563 @@
+{
+  "schema_version": 1,
+  "scope": "Read-only provenance and adverse-coverage review; no test rerun or final clean-checkout certification",
+  "review_head": "c5132e4e28f112d703757c531b310d3d22861371",
+  "historical_manifest_sha256": "03f274d5c01eb5156b7cc7e423a3e5520384246a390ee4b8dadb7cea09535f19",
+  "bootstrap_commit": "449f42623d7442b27bff20df165bb9829196b67c",
+  "historical_object_count": 17,
+  "current_identical_count": 15,
+  "current_evolved_count": 2,
+  "source_objects": [
+    {
+      "path": "docs/pro-return/DOSSIER.md",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/DOSSIER.md",
+      "original_bytes": 20239,
+      "original_sha256": "87efe2b1bc1a81904796b4a5dddb4510494385a660d0f8517c0c7272e58c80dc",
+      "bootstrap_sha256": "87efe2b1bc1a81904796b4a5dddb4510494385a660d0f8517c0c7272e58c80dc",
+      "current_bytes": 20239,
+      "current_sha256": "87efe2b1bc1a81904796b4a5dddb4510494385a660d0f8517c0c7272e58c80dc",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "docs/pro-return/ENVIRONMENT_AND_ACCEPTANCE.md",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/ENVIRONMENT_AND_ACCEPTANCE.md",
+      "original_bytes": 12206,
+      "original_sha256": "9530ff702b651a64fe91ec7dac74e58357832d4ef60362901a06094ea488b22e",
+      "bootstrap_sha256": "9530ff702b651a64fe91ec7dac74e58357832d4ef60362901a06094ea488b22e",
+      "current_bytes": 12206,
+      "current_sha256": "9530ff702b651a64fe91ec7dac74e58357832d4ef60362901a06094ea488b22e",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "docs/pro-return/INTERFACES.md",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/INTERFACES.md",
+      "original_bytes": 14796,
+      "original_sha256": "37851b3c4ec78b23a2f9c652a08ad406920775890ad3ba9becbd59e1b794efb1",
+      "bootstrap_sha256": "37851b3c4ec78b23a2f9c652a08ad406920775890ad3ba9becbd59e1b794efb1",
+      "current_bytes": 14796,
+      "current_sha256": "37851b3c4ec78b23a2f9c652a08ad406920775890ad3ba9becbd59e1b794efb1",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "docs/pro-return/PROBES.md",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/PROBES.md",
+      "original_bytes": 8731,
+      "original_sha256": "f2e36052c3bbb13a4681468ea8666ebd4d8ce66c58e446aa126439570b12d7bf",
+      "bootstrap_sha256": "f2e36052c3bbb13a4681468ea8666ebd4d8ce66c58e446aa126439570b12d7bf",
+      "current_bytes": 8731,
+      "current_sha256": "f2e36052c3bbb13a4681468ea8666ebd4d8ce66c58e446aa126439570b12d7bf",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "docs/pro-return/SOURCE_MAP.md",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/SOURCE_MAP.md",
+      "original_bytes": 15726,
+      "original_sha256": "cfcc86c7ec6ae62324f24173f7d508eea56a32db2adb38811c8eaf8e11c699e8",
+      "bootstrap_sha256": "cfcc86c7ec6ae62324f24173f7d508eea56a32db2adb38811c8eaf8e11c699e8",
+      "current_bytes": 15726,
+      "current_sha256": "cfcc86c7ec6ae62324f24173f7d508eea56a32db2adb38811c8eaf8e11c699e8",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "docs/pro-return/SUPPORT_NOISE_VARIATION.md",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/SUPPORT_NOISE_VARIATION.md",
+      "original_bytes": 12176,
+      "original_sha256": "3796cc75ee3fba3203ef96a68d19bc9dae5ee50982e5521de1014c01fdb28961",
+      "bootstrap_sha256": "3796cc75ee3fba3203ef96a68d19bc9dae5ee50982e5521de1014c01fdb28961",
+      "current_bytes": 12176,
+      "current_sha256": "3796cc75ee3fba3203ef96a68d19bc9dae5ee50982e5521de1014c01fdb28961",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "scripts/audit_axioms.py",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/scripts/audit_axioms.py",
+      "original_bytes": 4748,
+      "original_sha256": "3a1d65537778f32b3fbcab5903165ed96be4a4290fb313ffb8428dbd4e2064ad",
+      "bootstrap_sha256": "3a1d65537778f32b3fbcab5903165ed96be4a4290fb313ffb8428dbd4e2064ad",
+      "current_bytes": 4748,
+      "current_sha256": "3a1d65537778f32b3fbcab5903165ed96be4a4290fb313ffb8428dbd4e2064ad",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "scripts/symbolic_checks.py",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/scripts/symbolic_checks.py",
+      "original_bytes": 2572,
+      "original_sha256": "5871eeb7ad771f30690ddc466cd0e1d966bc4c0a08bf65bd2a0ed0e0c4a2e9d5",
+      "bootstrap_sha256": "5871eeb7ad771f30690ddc466cd0e1d966bc4c0a08bf65bd2a0ed0e0c4a2e9d5",
+      "current_bytes": 2572,
+      "current_sha256": "5871eeb7ad771f30690ddc466cd0e1d966bc4c0a08bf65bd2a0ed0e0c4a2e9d5",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "scripts/test_audit_axioms.py",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/scripts/test_audit_axioms.py",
+      "original_bytes": 2183,
+      "original_sha256": "6cae585c2106195f46f8f79bce743927ec214df387fc45f5c643fc3eaca523c7",
+      "bootstrap_sha256": "6cae585c2106195f46f8f79bce743927ec214df387fc45f5c643fc3eaca523c7",
+      "current_bytes": 2183,
+      "current_sha256": "6cae585c2106195f46f8f79bce743927ec214df387fc45f5c643fc3eaca523c7",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "FSCProbes/Algebra.lean",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/probe_project/FSCProbes/Algebra.lean",
+      "original_bytes": 1539,
+      "original_sha256": "c4bdee0472599e00779722c08f99519a83669bfd2e49cc238f9435bb7b178cfb",
+      "bootstrap_sha256": "c4bdee0472599e00779722c08f99519a83669bfd2e49cc238f9435bb7b178cfb",
+      "current_bytes": 1617,
+      "current_sha256": "cf59ed3f4c77765a040f120d7dc32694a6ddf1e7238db267b01221a424690704",
+      "original_matches_bootstrap": true,
+      "current_matches_original": false
+    },
+    {
+      "path": "FSCProbes/Audit.lean",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/probe_project/FSCProbes/Audit.lean",
+      "original_bytes": 342,
+      "original_sha256": "31492240c2112023914d6de7d9bb0d35384a10bfa14661514c061c74ae3f65bc",
+      "bootstrap_sha256": "31492240c2112023914d6de7d9bb0d35384a10bfa14661514c061c74ae3f65bc",
+      "current_bytes": 342,
+      "current_sha256": "31492240c2112023914d6de7d9bb0d35384a10bfa14661514c061c74ae3f65bc",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "FSCProbes/Imports.lean",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-lean-feasibility-01/attachments/0003__FSC_LEAN_HANDOFF.zip::FSC_LEAN_HANDOFF/probe_project/FSCProbes/Imports.lean",
+      "original_bytes": 2076,
+      "original_sha256": "5a55001f4804e133cd608b1c47a0ee828978e6b2c631bed6df902aa35f359f24",
+      "bootstrap_sha256": "5a55001f4804e133cd608b1c47a0ee828978e6b2c631bed6df902aa35f359f24",
+      "current_bytes": 7078,
+      "current_sha256": "571f9c69995c5ec887d7083300fd901c1fdc76da7323090f8ce0b45493c001fc",
+      "original_matches_bootstrap": true,
+      "current_matches_original": false
+    },
+    {
+      "path": "docs/sources/TEACHING_MANUSCRIPT.md",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/theory/2026-09-08-gpt6-fsc-teaching-writeup-01/attachments/0045__gaussian_simplex_teaching.md",
+      "original_bytes": 100201,
+      "original_sha256": "f519d8f70d38914b1076ea0fb1155b8973bd13a8e2fb7f0234c32550bb6a7625",
+      "bootstrap_sha256": "f519d8f70d38914b1076ea0fb1155b8973bd13a8e2fb7f0234c32550bb6a7625",
+      "current_bytes": 100201,
+      "current_sha256": "f519d8f70d38914b1076ea0fb1155b8973bd13a8e2fb7f0234c32550bb6a7625",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "docs/sources/FRESH_ANALYTIC_AUDIT.md",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/criticism/2026-09-07-gpt6-all-dimensional-fsc-fresh-critic-01/attachments/0003__ALL_DIMENSIONAL_FSC_AUDIT.md",
+      "original_bytes": 67231,
+      "original_sha256": "a98525f1a2d4fdf3b02885f96aef95d2cce4dce66c985b1b58e019ca6eb35fe1",
+      "bootstrap_sha256": "a98525f1a2d4fdf3b02885f96aef95d2cce4dce66c985b1b58e019ca6eb35fe1",
+      "current_bytes": 67231,
+      "current_sha256": "a98525f1a2d4fdf3b02885f96aef95d2cce4dce66c985b1b58e019ca6eb35fe1",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "docs/sources/CONTINUING_ANALYTIC_AUDIT.md",
+      "original_reference": "inbox/pro-chat-exports/gaussian-extremal-theory/criticism/2026-09-07-gpt6-five-site-critic-all-dimensional-02/attachments/0008__ALL_DIMENSIONAL_INDEPENDENT_AUDIT_2026-09-07.md",
+      "original_bytes": 53633,
+      "original_sha256": "b35eb05dab8ba95662906f6b782d0e0c3e78b4ac91b6ede99fa3ac593e2e8aee",
+      "bootstrap_sha256": "b35eb05dab8ba95662906f6b782d0e0c3e78b4ac91b6ede99fa3ac593e2e8aee",
+      "current_bytes": 53633,
+      "current_sha256": "b35eb05dab8ba95662906f6b782d0e0c3e78b4ac91b6ede99fa3ac593e2e8aee",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "docs/sources/CORE_PROOF.md",
+      "original_reference": "portfolio/programs/gaussian-extremal-theory/post-solution/CORE_PROOF.md",
+      "original_bytes": 15928,
+      "original_sha256": "50e2ee91b25eabcfeeb1861c98b1d112ce83fe6d6d729f7c9a9dd77b6fdc6b5d",
+      "bootstrap_sha256": "50e2ee91b25eabcfeeb1861c98b1d112ce83fe6d6d729f7c9a9dd77b6fdc6b5d",
+      "current_bytes": 15928,
+      "current_sha256": "50e2ee91b25eabcfeeb1861c98b1d112ce83fe6d6d729f7c9a9dd77b6fdc6b5d",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    },
+    {
+      "path": "docs/sources/COMPONENTWISE_COMPARISON.md",
+      "original_reference": "portfolio/programs/gaussian-extremal-theory/post-solution/COMPONENTWISE_COMPARISON.md",
+      "original_bytes": 19337,
+      "original_sha256": "28d262a7b96ee8cb72e474fc9980700c6c8bb9e420572ff49ea1920faf3a4892",
+      "bootstrap_sha256": "28d262a7b96ee8cb72e474fc9980700c6c8bb9e420572ff49ea1920faf3a4892",
+      "current_bytes": 19337,
+      "current_sha256": "28d262a7b96ee8cb72e474fc9980700c6c8bb9e420572ff49ea1920faf3a4892",
+      "original_matches_bootstrap": true,
+      "current_matches_original": true
+    }
+  ],
+  "dependency_pins": [
+    {
+      "name": "mathlib",
+      "expected_revision": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "actual_revision": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "revision_matches": true,
+      "tracked_changes": []
+    },
+    {
+      "name": "weak-simplex-conjecture-lean",
+      "expected_revision": "a204c53cae45652d12524132dbb9a2e0ffe8cf78",
+      "actual_revision": "a204c53cae45652d12524132dbb9a2e0ffe8cf78",
+      "revision_matches": true,
+      "tracked_changes": []
+    },
+    {
+      "name": "plausible",
+      "expected_revision": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "actual_revision": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "revision_matches": true,
+      "tracked_changes": []
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "actual_revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "revision_matches": true,
+      "tracked_changes": []
+    },
+    {
+      "name": "importGraph",
+      "expected_revision": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "actual_revision": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "revision_matches": true,
+      "tracked_changes": []
+    },
+    {
+      "name": "proofwidgets",
+      "expected_revision": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "actual_revision": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "revision_matches": true,
+      "tracked_changes": []
+    },
+    {
+      "name": "aesop",
+      "expected_revision": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "actual_revision": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "revision_matches": true,
+      "tracked_changes": []
+    },
+    {
+      "name": "Qq",
+      "expected_revision": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "actual_revision": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "revision_matches": true,
+      "tracked_changes": []
+    },
+    {
+      "name": "batteries",
+      "expected_revision": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "actual_revision": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "revision_matches": true,
+      "tracked_changes": []
+    },
+    {
+      "name": "Cli",
+      "expected_revision": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "actual_revision": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "revision_matches": true,
+      "tracked_changes": []
+    }
+  ],
+  "selected_pinned_sources": [
+    {
+      "package": "weak-simplex-conjecture-lean",
+      "path": "LICENSE",
+      "bytes": 1073,
+      "sha256": "305599e72205097629760507f8f5b91f951cb5bbf6871554fe7450adabf1a2db",
+      "matches_pinned_git_blob": true
+    },
+    {
+      "package": "weak-simplex-conjecture-lean",
+      "path": "WeakSimplexConjectureLean/Gaussian/DensityRatio.lean",
+      "bytes": 21556,
+      "sha256": "c0a1f5e66f030ec5fcff5388449b5a77952cb6ee207d7616a6ac33000880faa4",
+      "matches_pinned_git_blob": true
+    },
+    {
+      "package": "weak-simplex-conjecture-lean",
+      "path": "WeakSimplexConjectureLean/LogConcavity/Prekopa.lean",
+      "bytes": 4119,
+      "sha256": "2e74229e2f1011e37912ce9ad886a90fdab7629ff41ce767beb816e655eb7896",
+      "matches_pinned_git_blob": true
+    },
+    {
+      "package": "weak-simplex-conjecture-lean",
+      "path": "WeakSimplexConjectureLean/Vendor/StatLean/LICENSE",
+      "bytes": 10615,
+      "sha256": "d5945fe0f38866a919940212b0e3b5b0c30629b923c3e26dcce026571a29cd93",
+      "matches_pinned_git_blob": true
+    },
+    {
+      "package": "weak-simplex-conjecture-lean",
+      "path": "WeakSimplexConjectureLean/Vendor/StatLean/PiGaussian.lean",
+      "bytes": 2992,
+      "sha256": "5c9060620eac834b896613fc672d6cfc8a35c2b2be5ab16f48a8d6da0a1fb890",
+      "matches_pinned_git_blob": true
+    },
+    {
+      "package": "weak-simplex-conjecture-lean",
+      "path": "WeakSimplexConjectureLean/Vendor/StatLean/PiWithDensity.lean",
+      "bytes": 7969,
+      "sha256": "348d915e5d3b758ed057feb8a3cc13066e99d09b9287f95f8c8f9cb0cff07b7e",
+      "matches_pinned_git_blob": true
+    },
+    {
+      "package": "weak-simplex-conjecture-lean",
+      "path": "WeakSimplexConjectureLean/Vendor/StatLean/WithDensityMap.lean",
+      "bytes": 1592,
+      "sha256": "b272864791b6a0b7e73e1588cb4cb031f0347a70d2f70e5898da86c5cd19dcf4",
+      "matches_pinned_git_blob": true
+    },
+    {
+      "package": "mathlib",
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "matches_pinned_git_blob": true
+    },
+    {
+      "package": "mathlib",
+      "path": "Mathlib/Analysis/Calculus/FDeriv/Partial.lean",
+      "bytes": 5970,
+      "sha256": "bd55f61ca2043fefe0b343a6f7516608901bce0bc219cfd0a66396771389042e",
+      "matches_pinned_git_blob": true
+    }
+  ],
+  "toolchain": {
+    "configured": "leanprover/lean4:v4.31.0",
+    "actual": "Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)"
+  },
+  "notices": {
+    "standard_density_contains_full_pinned_mit_notice": true,
+    "finite_partial_contains_original_copyright": true,
+    "finite_partial_contains_original_authors": true,
+    "finite_partial_normalized_lemma_matches_upstream": true,
+    "finite_partial_notice_scope_excludes_project_relicensing": true,
+    "root_new_work_license_files": [],
+    "generated_private_references_in_production": []
+  },
+  "root_remotes": [],
+  "adverse_coverage": [
+    {
+      "specification": "Source/API probes and actual audit calibration",
+      "consumers": [
+        "FSCProbes/Imports.lean",
+        "FSCProbes/Algebra.lean",
+        "checks/fixtures/AuditAllowed.lean",
+        "checks/fixtures/AuditRejected.lean"
+      ],
+      "evidence": "docs/work-packages/WP00.md"
+    },
+    {
+      "specification": "Triangle actual Gaussian law, pair Dirac laws, successes 1/0/1, exact q and redundant cap",
+      "consumers": [
+        "FSCProbes/SingularTriangle.lean"
+      ],
+      "audits": [
+        "FSCProbes/SingularTriangleAudit.lean"
+      ],
+      "endpoints": [
+        "FSCProbes.SingularTriangle.pairLaw_01",
+        "FSCProbes.SingularTriangle.pairLaw_02",
+        "FSCProbes.SingularTriangle.pairLaw_12",
+        "FSCProbes.SingularTriangle.q_01",
+        "FSCProbes.SingularTriangle.q_02",
+        "FSCProbes.SingularTriangle.q_12",
+        "FSCProbes.SingularTriangle.singlePinMass_0_eq_capMass",
+        "FSCProbes.SingularTriangle.redundant_support_C1"
+      ]
+    },
+    {
+      "specification": "Triangle actual normalized-addition right derivative and rank increase 2 to 3",
+      "consumers": [
+        "FSCProbes/TriangleVariation.lean",
+        "FSCProbes/UniversalAnalyticAdverses.lean"
+      ],
+      "audits": [
+        "FSCProbes/TriangleVariationAudit.lean",
+        "FSCProbes/UniversalAnalyticAdversesAudit.lean"
+      ],
+      "endpoints": [
+        "FSCProbes.TriangleVariation.hasDerivWithinAt_normalizedAdd",
+        "FSCProbes.TriangleVariation.normalizedAdd_derivative_neg",
+        "FSCProbes.TriangleVariation.normalizedAdd_rank_increases",
+        "FSCProbes.UniversalAnalyticAdverses.triangle_universal_derivative"
+      ]
+    },
+    {
+      "specification": "Canonical regression joint Gaussian product, fixed pins and arbitrary measurable-test Fubini",
+      "consumers": [
+        "FSC/Gaussian/PairLaw.lean",
+        "checks/wp04/Adverse.lean",
+        "FSCProbes/SingularTriangle.lean"
+      ],
+      "audits": [
+        "checks/wp04/LawAudit.lean",
+        "checks/wp04/Adverse.lean"
+      ],
+      "endpoints": [
+        "FSC.pairLaw_pin_ae",
+        "FSC.lintegral_pairPin"
+      ]
+    },
+    {
+      "specification": "Full-index pair-law lower-orthant frontier is not null",
+      "consumers": [
+        "checks/release/PairFrontierAdverse.lean"
+      ],
+      "status": "Closed during review by analyst; independently source-reviewed here",
+      "endpoints": [
+        "FSCChecks.PairFrontier.pairLaw_full_frontier_mass_one",
+        "FSCChecks.PairFrontier.pairLaw_full_frontier_not_null"
+      ],
+      "fresh_audit_receipt": "checks/release/pair-frontier-axioms.jsonl",
+      "fresh_audit_count": 4,
+      "fresh_audit_reported_by": "analytic_preflight; review did not rerun tests"
+    },
+    {
+      "specification": "Five planar directions: actual support C1, projected redundant derivative zero and antipodal omission",
+      "consumers": [
+        "checks/wp05-support/Adverse.lean",
+        "FSCProbes/UniversalAnalyticAdverses.lean",
+        "checks/wp16/Adverse.lean"
+      ],
+      "endpoints": [
+        "FSCChecks.WP05Support.planar_actual_derivative",
+        "FSCChecks.WP05Support.projected_actual_C1",
+        "FSCChecks.WP05Support.projected_weaker_derivative_zero",
+        "FSCProbes.UniversalAnalyticAdverses.fiveGram_actual_law",
+        "FSCChecks.WP16.planar_padded_components"
+      ]
+    },
+    {
+      "specification": "Equal-support reference is genuinely nondifferentiable but the actual-support tangent applies",
+      "consumers": [
+        "checks/wp06/Adverse.lean",
+        "checks/wp19/Adverse.lean"
+      ],
+      "endpoints": [
+        "FSCChecks.WP06.tied_reference_tangent",
+        "FSCChecks.WP06.tied_reference_still_not_differentiable",
+        "FSCChecks.SlopeRigidity.redundant_tied_reference_tangent"
+      ]
+    },
+    {
+      "specification": "Actual vector threshold C2, Peano2 and canonical q Hessian; universal PSD noise including singular laws",
+      "consumers": [
+        "FSC/Gaussian/ThresholdExpansion.lean",
+        "FSCProbes/UniversalAnalyticAdverses.lean"
+      ],
+      "audits": [
+        "FSCProbes/ThresholdExpansionAudit.lean",
+        "FSCProbes/UniversalAnalyticAdversesAudit.lean"
+      ],
+      "endpoints": [
+        "FSC.contDiffAt_two_thresholdCDF",
+        "FSC.peano2_thresholdCDF",
+        "FSC.thresholdHessian_apply",
+        "FSC.hasDerivWithinAt_normalizedAdd",
+        "FSCProbes.UniversalAnalyticAdverses.fiveGram_actual_peano"
+      ]
+    },
+    {
+      "specification": "Bounded-function noise averaging uses centered law and second moment only; rank-zero control",
+      "consumers": [
+        "FSC/Analysis/NoiseAveraging.lean",
+        "checks/wp08/Adverse.lean"
+      ],
+      "audits": [
+        "checks/wp08/Audit.lean",
+        "checks/wp08/Adverse.lean"
+      ],
+      "endpoints": [
+        "FSC.Peano2.exists_remainder_bound",
+        "FSC.Peano2.tendsto_integral_secondOrder",
+        "FSC.Peano2.hasDerivWithinAt_noiseAverage",
+        "FSCChecks.WP08.dirac_zero_noise"
+      ],
+      "review_note": "The actual theorem signatures and domination proof require no fourth moment, density, global C2 bound or cutoff; no heavy-tail toy example was specified."
+    },
+    {
+      "specification": "Square strip exact second moment and strict padded energy; unbounded redundant halfline dilation",
+      "consumers": [
+        "checks/wp11/Adverse.lean",
+        "checks/wp16/Adverse.lean"
+      ],
+      "endpoints": [
+        "FSCChecks.WP11.square_strip_energy",
+        "FSCChecks.WP11.square_strip_normalized_energy_pos",
+        "FSCChecks.WP11.square_strip_shape",
+        "FSCChecks.WP11.redundant_halfLine_energy",
+        "FSCChecks.WP16.square_actual_padding"
+      ]
+    },
+    {
+      "specification": "Scalar relaxed positivity counterexample with empty occupied component",
+      "consumers": [
+        "checks/wp14/Adverse.lean"
+      ],
+      "endpoints": [
+        "FSCChecks.emptyComponentCounterexample"
+      ]
+    },
+    {
+      "specification": "Signed row loss and rigidity without universal q positivity",
+      "consumers": [
+        "checks/wp15/Adverse.lean",
+        "FSCProbes/SingularTriangle.lean"
+      ],
+      "endpoints": [
+        "FSCChecks.WP15.negative_signed_row",
+        "FSCChecks.WP15.saturated_low_row_strict",
+        "FSCChecks.WP15.antipodal_zero_kappa",
+        "FSCProbes.SingularTriangle.q_02"
+      ]
+    },
+    {
+      "specification": "Strict compact barrier endpoint exclusions, fixed-shape derivative and postcomparison contact",
+      "consumers": [
+        "FSC/Threshold/LinearBarrier.lean",
+        "FSC/Comparison.lean",
+        "FSC/Equality.lean"
+      ],
+      "audits": [
+        "checks/WP20Audit.lean",
+        "checks/wp22/ComparisonAudit.lean",
+        "checks/wp23/Audit.lean"
+      ],
+      "endpoints": [
+        "FSC.compact_slope_comparison",
+        "FSC.slope_eq_of_touch",
+        "FSC.cdf_simplex_le",
+        "FSC.cdf_eq_simplex_iff"
+      ],
+      "review_note": "Inspected actual barrier proof: D(0)=0, probability bounds plus epsilon*T>1, positive interior minimum, two-sided fixed-shape derivative; no minimum-envelope derivative."
+    },
+    {
+      "specification": "Additional zero-threshold/duplicate/antipodal/full-rank/singular public controls",
+      "consumers": [
+        "checks/wp21/Adverse.lean",
+        "checks/wp23/Adverse.lean",
+        "checks/wp24/Adverse.lean",
+        "FSCProbes/UniversalAnalyticAdverses.lean"
+      ],
+      "endpoints": [
+        "FSCChecks.nonpositive_equality_without_simplex",
+        "FSCChecks.WP23.identity_strict",
+        "FSCChecks.WP23.signedGram_strict",
+        "FSCChecks.WP23.squareGram_strict",
+        "FSCProbes.UniversalAnalyticAdverses.antipodal_zero_not_differentiable"
+      ]
+    }
+  ]
+}

@@ -50,9 +50,9 @@ theorem antipodalSingleLaw (t : ℝ) :
   ext k
   fin_cases k <;> simp [FSC.singleMean, Matrix.vecMulVec_apply]
 
-#print axioms duplicateCorrelation
-#print axioms duplicateSingleLaw
-#print axioms antipodalCorrelation
-#print axioms antipodalSingleLaw
+#print axioms FSCChecks.duplicateCorrelation
+#print axioms FSCChecks.duplicateSingleLaw
+#print axioms FSCChecks.antipodalCorrelation
+#print axioms FSCChecks.antipodalSingleLaw
 
 end FSCChecks

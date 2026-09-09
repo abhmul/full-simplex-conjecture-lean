@@ -1,0 +1,27 @@
+lean-version: exit 0
+lake-version: exit 0
+full-build: exit 0
+public-root: exit 0
+public-axioms: exit 0
+independent-statements: exit 0
+regression-FSCProbes-Audit: exit 0
+regression-FSCProbes-FeasibleVariationAudit: exit 0
+regression-FSCProbes-SingularTriangleAudit: exit 0
+regression-FSCProbes-ThresholdExpansionAudit: exit 0
+regression-FSCProbes-TriangleThresholdAudit: exit 0
+regression-FSCProbes-TriangleVariationAudit: exit 0
+regression-FSCProbes-UniversalAnalyticAdversesAudit: exit 0
+regression-checks-release-PairFrontierAdverse: exit 0
+regression-checks-wp02-Adverse: exit 1
+Traceback (most recent call last):
+  File "/home/abhmul/dev/full-simplex-conjecture-lean/scripts/verify_release.py", line 177, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/abhmul/dev/full-simplex-conjecture-lean/scripts/verify_release.py", line 150, in main
+    audit(relative, 'regression-' + relative.replace('/', '-').removesuffix('.lean'))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhmul/dev/full-simplex-conjecture-lean/scripts/verify_release.py", line 112, in audit
+    return run(label, command, expected)
+  File "/home/abhmul/dev/full-simplex-conjecture-lean/scripts/verify_release.py", line 103, in run
+    raise RuntimeError(f'{label}: expected {expected}, got {proc.returncode}; see {logfile}')
+RuntimeError: regression-checks-wp02-Adverse: expected 0, got 1; see /home/abhmul/dev/full-simplex-conjecture-lean/checks/release/current-gates/regression-checks-wp02-Adverse.log

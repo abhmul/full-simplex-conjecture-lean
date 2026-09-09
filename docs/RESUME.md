@@ -1,6 +1,6 @@
 # Travel-pause checkpoint
 
-Paused on 2026-09-08 at the user's request. Resume only when the user asks to continue. The unbudgeted FSC goal remains unfinished; this pause is neither mathematical blockage nor completion. All workers are stopped and no compiler/audit job is left running.
+Historical pause on 2026-09-08 at the user's request; the user has since explicitly resumed. The unbudgeted FSC goal remains unfinished. This file preserves the exact clean c5132e4 checkpoint; current activity is in STATE.md and the package cards.
 
 The local commit containing this note preserves the completed minimizer/facet milestone and the explicitly unfinished development modules. Earlier accepted milestones: 104ea91 foundations; ffb94a2 actual pin laws/averaging/singular expansion; 4089807 singular derivative/row positivity/ambient energy; 82ee3ec support calculus/compactness/padded Gram; f9d6e92 universal derivative/exact simplex recursion. Root remains sole integration/Git owner; workers do not commit.
 

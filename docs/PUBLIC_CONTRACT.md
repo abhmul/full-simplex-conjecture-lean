@@ -1,6 +1,6 @@
 # Exact FSC certification contract
 
-Status: mathematical contract frozen for implementation; no listed release theorem is implemented yet.
+Status: mathematical contract preserved; the listed public comparison/equality/strictness and Gaussian-event/maximum wrappers are implemented. Final clean-checkout acceptance is tracked separately in STATE.md and WP25.
 
 For every integer $n\ge2$, every real positive-semidefinite correlation matrix $G$, and every real $t$, put
 $$

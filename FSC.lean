@@ -30,6 +30,7 @@ import FSC.Minimizers.Exclusions
 import FSC.Simplex.BaseCases
 import FSC.Simplex.Recursion
 import FSC.Threshold.LinearBarrier
+import FSC.Main
 
-/- Accepted foundations and generic theorems only. The all-dimensional FSC comparison
-   and positive-threshold equality endpoints are not yet implemented. -/
+/- Public root: full all-correlation/all-threshold comparison, positive-threshold
+   equality and strictness, actual Gaussian event and finite-maximum wrappers. -/

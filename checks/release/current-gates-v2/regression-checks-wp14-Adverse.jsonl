@@ -1,0 +1,1 @@
+{"caption":"","data":"'FSCChecks.emptyComponentCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]","endPos":{"column":6,"line":30},"fileName":"/home/abhmul/dev/full-simplex-conjecture-lean/checks/wp14/Adverse.lean","isSilent":false,"keepFullRange":false,"kind":"[anonymous]","pos":{"column":0,"line":30},"severity":"information"}
