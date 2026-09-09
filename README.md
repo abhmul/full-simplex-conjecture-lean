@@ -1,6 +1,6 @@
 # Full simplex conjecture: Lean formalization
 
-The exact full simplex comparison and positive-threshold equality theorem are implemented in Lean. The public root is `import FSC`; final clean-checkout acceptance is in progress. The supplied teaching proof and reviewed support/noise route are preserved in docs/sources and docs/pro-return.
+The exact full simplex comparison and positive-threshold equality theorem are implemented in Lean and passed independent statement review, warning-clean builds, fresh transitive axiom audits and artifact-free source reconstruction. The public root is `import FSC`; see [the acceptance report](docs/RELEASE_AUDIT.md). The supplied teaching proof and reviewed support/noise route are preserved in docs/sources and docs/pro-return.
 
 Start with [the implementation prompt](IMPLEMENTATION_PROMPT.md), [the architecture](docs/ARCHITECTURE.md), [the work-package graph](docs/WORK_PACKAGES.md), and [current state](docs/STATE.md). Use the project-local lean-work-package skill for a selected package.
 
@@ -10,4 +10,4 @@ This is a local repository with no remote. The old WSC checkout is read-only. Ex
 
 The lead owns integration and Git. Workers own disjoint files and return reviewed changes; they do not commit. The research coordinator owns the separate research repository and reviews mathematical contract changes, not routine Lean implementation.
 
-Publication, public hosting and licensing of new work remain operator decisions. Existing dependency licenses are preserved; this scaffold does not relicense them or grant publication authority.
+Publication, public hosting and licensing of new work remain operator decisions. Existing dependency licenses are preserved; this repository does not relicense them or grant publication authority.

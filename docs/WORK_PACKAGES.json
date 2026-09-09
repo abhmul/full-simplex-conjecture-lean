@@ -157,7 +157,7 @@
         "FSCProbes/SingularTriangle.lean",
         "FSCProbes/TriangleThreshold.lean",
         "FSCProbes/TriangleVariation.lean",
-        "FSCProbes/BoundaryControls.lean"
+        "FSCProbes/UniversalAnalyticAdverses.lean"
       ],
       "status": "integrated",
       "owner": "root"
@@ -378,7 +378,7 @@
         "docs/RELEASE_AUDIT.md",
         "checks/release/"
       ],
-      "status": "in-progress",
+      "status": "integrated",
       "owner": "root"
     },
     {

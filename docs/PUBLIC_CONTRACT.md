@@ -1,6 +1,6 @@
 # Exact FSC certification contract
 
-Status: mathematical contract preserved; the listed public comparison/equality/strictness and Gaussian-event/maximum wrappers are implemented. Final clean-checkout acceptance is tracked separately in STATE.md and WP25.
+Status: mathematical contract preserved; all public endpoints and final acceptance gates passed. Exact source identity, independent statement review and artifact-free reconstruction evidence are recorded in RELEASE_AUDIT.md.
 
 For every integer $n\ge2$, every real positive-semidefinite correlation matrix $G$, and every real $t$, put
 $$

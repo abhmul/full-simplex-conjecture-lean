@@ -1,5 +1,13 @@
 # Implementation log
 
+## Final implementation acceptance
+
+The exact formalization source was committed as 1915b3485c8d61e531374261e7844010b7538eb9 after independent source/statement reviews and current-checkout acceptance. Root reconstructed it in new source-only Git clones under /tmp/fsc-source-reproduction-20260909T012906Z. Independent startup review verified zero compiled artifacts, all ten pins, unshared Git object storage and source identity. With downloaded and local caches disabled, the full source build passed all3839 jobs in a measured3105.173 seconds. The separate root compilation was warning-clean with empty output.
+
+All final audits passed in that checkout: public45, independent expanded17, regression216 across27 files, plus4 supplemental generic-adapter declarations in3 already-committed files. There were282 mathematical reports, all within the allowed three axioms. Twelve parser tests passed; the unapproved-axiom and missing-endpoint calibrations were rejected exactly as intended. All pins, source files and clone Git status remained unchanged. The independent reviewer reparsed raw reports and checked every command exit and all40 clean/supplemental log hashes. Exact receipts are checks/release/clean-source, clean-adapters, clean-preparation.json and the WP25 review cards.
+
+The maintained runner's fixed regression map now includes those3 adapter files automatically (30 total); the consolidated40-command integration run also passed. An independent AST comparison confirms no runner change beyond the added requirements. Source-equivalence.json verifies all135 tracked Lean/pin/audit-parser/test/clone-helper files against the certified commit. Later evidence metadata is explicitly distinguished from that commit's Git tree; certified Lean source is unchanged. All28 work packages are integrated. No mathematical input or required acceptance gate remains open. Publication, external acceptance and licensing new work remain separate.
+
 ## Resumed final theorem integration
 
 After the user explicitly resumed, root verified clean c5132e4 and continued WP19–WP25. WP19 minimum wrappers discharge distinctness, non-PD and finite row tests from the actual global minimum. WP22 now proves every-dimensional/all-real comparison by strong induction using only lower-size comparison and the actual compact barrier. WP23 obtains equality rigidity from the proved comparison and positive contact differentiation. WP24 exposes actual Gaussian-event and finite-maximum tail le/lt/iff endpoints. All final sources have independent reviews and fresh permitted-axiom receipts. The public root imports Main; the former empty/bootstrap labels remain historical only.

@@ -1,0 +1,565 @@
+{
+  "root_revision": "1915b3485c8d61e531374261e7844010b7538eb9",
+  "destination": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout",
+  "passed": true,
+  "clones": [
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout",
+      "expected_revision": "1915b3485c8d61e531374261e7844010b7538eb9",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout",
+            "checkout",
+            "--detach",
+            "1915b3485c8d61e531374261e7844010b7538eb9"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at 1915b34 Prove exact full simplex comparison and equality; freeze acceptance candidate\n"
+        }
+      ],
+      "passed": true,
+      "actual_revision": "1915b3485c8d61e531374261e7844010b7538eb9",
+      "source_status": "",
+      "origin": "/home/abhmul/dev/full-simplex-conjecture-lean",
+      "has_alternates": false
+    },
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/mathlib",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/mathlib",
+      "expected_revision": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/mathlib",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/mathlib"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/mathlib'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/mathlib",
+            "checkout",
+            "--detach",
+            "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at fabf563a7c chore: bump toolchain to v4.31.0 (#40633)\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/mathlib",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/leanprover-community/mathlib4.git"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "passed": true,
+      "actual_revision": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "source_status": "",
+      "origin": "https://github.com/leanprover-community/mathlib4.git",
+      "has_alternates": false
+    },
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/weak-simplex-conjecture-lean",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/weak-simplex-conjecture-lean",
+      "expected_revision": "a204c53cae45652d12524132dbb9a2e0ffe8cf78",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/weak-simplex-conjecture-lean",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/weak-simplex-conjecture-lean"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/weak-simplex-conjecture-lean'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/weak-simplex-conjecture-lean",
+            "checkout",
+            "--detach",
+            "a204c53cae45652d12524132dbb9a2e0ffe8cf78"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at a204c53 Document equality and uniqueness scope\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/weak-simplex-conjecture-lean",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/abhmul/weak-simplex-conjecture-lean.git"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "passed": true,
+      "actual_revision": "a204c53cae45652d12524132dbb9a2e0ffe8cf78",
+      "source_status": "",
+      "origin": "https://github.com/abhmul/weak-simplex-conjecture-lean.git",
+      "has_alternates": false
+    },
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/plausible",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/plausible",
+      "expected_revision": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/plausible",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/plausible"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/plausible'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/plausible",
+            "checkout",
+            "--detach",
+            "63045536fe95024e6c18fc7b48e03f506701c5bc"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at 6304553 chore: bump toolchain to v4.31.0 (#87)\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/plausible",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/leanprover-community/plausible"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "passed": true,
+      "actual_revision": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "source_status": "",
+      "origin": "https://github.com/leanprover-community/plausible",
+      "has_alternates": false
+    },
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/LeanSearchClient",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/LeanSearchClient",
+      "expected_revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/LeanSearchClient",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/LeanSearchClient"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/LeanSearchClient'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/LeanSearchClient",
+            "checkout",
+            "--detach",
+            "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at c5d5b8f fix typo in usage: \"woould\" -> \"would\" (#31)\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/LeanSearchClient",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/leanprover-community/LeanSearchClient"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "passed": true,
+      "actual_revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "source_status": "",
+      "origin": "https://github.com/leanprover-community/LeanSearchClient",
+      "has_alternates": false
+    },
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/importGraph",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/importGraph",
+      "expected_revision": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/importGraph",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/importGraph"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/importGraph'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/importGraph",
+            "checkout",
+            "--detach",
+            "5c7542ed018c78194f1e2b903eaf6a792b74c03d"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at 5c7542e chore: bump toolchain to v4.31.0 (#121)\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/importGraph",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/leanprover-community/import-graph"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "passed": true,
+      "actual_revision": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "source_status": "",
+      "origin": "https://github.com/leanprover-community/import-graph",
+      "has_alternates": false
+    },
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/proofwidgets",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/proofwidgets",
+      "expected_revision": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/proofwidgets",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/proofwidgets"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/proofwidgets'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/proofwidgets",
+            "checkout",
+            "--detach",
+            "24b0d9dc081c5423f8eec7e866c441e5184f29d9"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at 24b0d9d chore: bump toolchain to v4.31.0 (#179)\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/proofwidgets",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/leanprover-community/ProofWidgets4"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "passed": true,
+      "actual_revision": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "source_status": "",
+      "origin": "https://github.com/leanprover-community/ProofWidgets4",
+      "has_alternates": false
+    },
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/aesop",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/aesop",
+      "expected_revision": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/aesop",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/aesop"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/aesop'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/aesop",
+            "checkout",
+            "--detach",
+            "e3cb2f741431ce31bf73549fb52316a57368b06f"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at e3cb2f7 chore: bump toolchain to v4.31.0 (#332)\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/aesop",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/leanprover-community/aesop"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "passed": true,
+      "actual_revision": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "source_status": "",
+      "origin": "https://github.com/leanprover-community/aesop",
+      "has_alternates": false
+    },
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/Qq",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/Qq",
+      "expected_revision": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/Qq",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/Qq"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/Qq'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/Qq",
+            "checkout",
+            "--detach",
+            "f46324995fca5f0483b742e4eb4daec7f4ee50d2"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at f463249 chore: bump toolchain to v4.31.0 (#148)\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/Qq",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/leanprover-community/quote4"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "passed": true,
+      "actual_revision": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "source_status": "",
+      "origin": "https://github.com/leanprover-community/quote4",
+      "has_alternates": false
+    },
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/batteries",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/batteries",
+      "expected_revision": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/batteries",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/batteries"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/batteries'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/batteries",
+            "checkout",
+            "--detach",
+            "fa08db58b30eb033edcdab331bba000827f9f785"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at fa08db58 chore: bump toolchain to v4.31.0 (#1855)\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/batteries",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/leanprover-community/batteries"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "passed": true,
+      "actual_revision": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "source_status": "",
+      "origin": "https://github.com/leanprover-community/batteries",
+      "has_alternates": false
+    },
+    {
+      "source": "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/Cli",
+      "target": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/Cli",
+      "expected_revision": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "commands": [
+        {
+          "command": [
+            "git",
+            "clone",
+            "--no-hardlinks",
+            "--no-checkout",
+            "/home/abhmul/dev/full-simplex-conjecture-lean/.lake/packages/Cli",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/Cli"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "Cloning into '/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/Cli'...\ndone.\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/Cli",
+            "checkout",
+            "--detach",
+            "92564e5770e4d09f2d86dfbf8ada1e9c715b384c"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": "HEAD is now at 92564e5 chore: bump toolchain to v4.31.0 (#87)\n"
+        },
+        {
+          "command": [
+            "git",
+            "-C",
+            "/tmp/fsc-source-reproduction-20260909T012906Z/checkout/.lake/packages/Cli",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/leanprover/lean4-cli"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "passed": true,
+      "actual_revision": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "source_status": "",
+      "origin": "https://github.com/leanprover/lean4-cli",
+      "has_alternates": false
+    }
+  ]
+}

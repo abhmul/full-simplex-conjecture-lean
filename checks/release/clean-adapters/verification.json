@@ -1,0 +1,68 @@
+{
+  "revision": "1915b3485c8d61e531374261e7844010b7538eb9",
+  "cwd": "/tmp/fsc-source-reproduction-20260909T012906Z/checkout",
+  "passed": true,
+  "commands": [
+    {
+      "source": "checks/wp05/Consumer.lean",
+      "source_sha256": "4f567c01170620f8f322dd69e721836c348ddaedd6abf19eef0cb5f6f6455f38",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "checks/wp05/Consumer.lean",
+        "--save-json",
+        "/tmp/fsc-source-reproduction-20260909T012906Z/supplemental/checks-wp05-Consumer.jsonl",
+        "--required",
+        "FSCChecks.WP05.mixed_product_C2"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 2.1248804209999435,
+      "log": "checks-wp05-Consumer.log",
+      "log_sha256": "8f927865c90f7f5a92b537c4c78f462bc9e2971339987a9dcbcf2f779cd24548"
+    },
+    {
+      "source": "checks/wp05/FiniteConsumer.lean",
+      "source_sha256": "128ba2508b75fc90718e2e3e0c8b70cdf505af7a81ad85fe899c51a5778586c5",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "checks/wp05/FiniteConsumer.lean",
+        "--save-json",
+        "/tmp/fsc-source-reproduction-20260909T012906Z/supplemental/checks-wp05-FiniteConsumer.jsonl",
+        "--required",
+        "FSCChecks.WP05.empty_input_C2",
+        "--required",
+        "FSCChecks.WP05.three_coordinate_C2"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 1.6981971559998783,
+      "log": "checks-wp05-FiniteConsumer.log",
+      "log_sha256": "9b75118e6f7f5762b7f5640288ed934d78679ce8ae43b8d3f2d752d6443c220c"
+    },
+    {
+      "source": "checks/wp07/VectorConsumer.lean",
+      "source_sha256": "044e60562e5e6bd23a64714c8f424cbb7718df48b5efa324dd5d9ff639dd8916",
+      "command": [
+        "/home/abhmul/.local/share/agent-python/.venv/bin/python",
+        "scripts/audit_axioms.py",
+        "checks/wp07/VectorConsumer.lean",
+        "--save-json",
+        "/tmp/fsc-source-reproduction-20260909T012906Z/supplemental/checks-wp07-VectorConsumer.jsonl",
+        "--required",
+        "FSCChecks.WP07.mixed_quadratic_peano"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 1.5799798919997556,
+      "log": "checks-wp07-VectorConsumer.log",
+      "log_sha256": "8f927865c90f7f5a92b537c4c78f462bc9e2971339987a9dcbcf2f779cd24548"
+    }
+  ],
+  "environment": {
+    "LEAN_NUM_THREADS": "1",
+    "LAKE_NO_CACHE": "true",
+    "LAKE_ARTIFACT_CACHE": "false",
+    "LAKE_CACHE_DIR": "",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "source_status": ""
+}
