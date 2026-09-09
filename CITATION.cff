@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the commit used. The accompanying preprint is in preparation."
+type: software
+title: "Full Simplex Conjecture in Lean"
+authors:
+  - family-names: "Mulgund"
+    given-names: "Abhijeet"
+repository-code: "https://github.com/abhmul/full-simplex-conjecture-lean"
+url: "https://github.com/abhmul/full-simplex-conjecture-lean"
+abstract: "A Lean 4 formalization of the full simplex comparison for Gaussian maxima over all positive-semidefinite correlation matrices and all real thresholds, with equality at each positive threshold precisely at the regular simplex."
+keywords:
+  - "Lean 4"
+  - "formalized mathematics"
+  - "Gaussian maxima"
+  - "Full Simplex Conjecture"
+  - "correlation matrices"

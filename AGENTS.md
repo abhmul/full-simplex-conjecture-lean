@@ -12,7 +12,7 @@ Production must contain no placeholders or custom axioms. Only a subset of prope
 
 Compile incrementally; install upstream Lake targets before compiling consumers. At milestones build with warnings as errors, compile the release root separately, run fresh transitive audits and review exact statements. The final release additionally requires artifact-free clean-checkout reproduction with all pins verified. Cached probes and an empty bootstrap root are not FSC certificates.
 
-Keep source licenses/provenance. Existing WSC is a pinned dependency, not permission to import private declarations by generated names. Adapt a narrow source slice only with provenance, preserved notices and a fresh audit. No public remote, release or new-work license is authorized; operator decides those separately.
+Keep source licenses/provenance. Existing WSC is a pinned dependency, not permission to import private declarations by generated names. Adapt a narrow source slice only with provenance, preserved notices and a fresh audit. The operator has authorized public GitHub hosting and pushes to the configured remote. Release tagging and new-work licensing remain separate operator decisions. The preprint is in preparation; do not present development manuscripts as a published or released paper.
 
 Continue useful in-scope work, including other independent packages when one interface is blocked. Stop for completion or a genuine authority/mathematical dependency boundary, with exact failed goals and minimal reproductions. No arbitrary time, token, pass or package-count limit is imposed. Do not interpret a local lemma completion as the whole project's stop rule.
 
