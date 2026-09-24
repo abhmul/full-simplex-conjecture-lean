@@ -2,7 +2,7 @@
 
 ## Project status
 
-The accompanying preprint is in preparation. The formalization's exact scope and verification evidence are recorded in [RELEASE_AUDIT.md](docs/RELEASE_AUDIT.md). The original mathematical inputs and consultation notes in [docs/sources/](docs/sources/README.md) and [docs/pro-return/](docs/pro-return/) retain their original bytes; [SOURCE_MANIFEST.json](docs/SOURCE_MANIFEST.json) records their provenance and hashes.
+The formalization accompanies the paper [arXiv:2609.28452](https://arxiv.org/abs/2609.28452). The [README](README.md#relation-to-the-paper) states which of the paper's results are formalized, and [RELEASE_AUDIT.md](docs/RELEASE_AUDIT.md) records the formalization's exact scope and verification evidence. The original mathematical inputs and consultation notes in [docs/sources/](docs/sources/README.md) and [docs/pro-return/](docs/pro-return/) retain their original bytes. [SOURCE_MANIFEST.json](docs/SOURCE_MANIFEST.json) records their provenance and hashes.
 
 A project-wide license for newly authored FSC material has not yet been selected. The licenses and notices below apply to the identified upstream material.
 
@@ -13,7 +13,7 @@ A project-wide license for newly authored FSC material has not yet been selected
 | [Weak Simplex Conjecture Lean](https://github.com/abhmul/weak-simplex-conjecture-lean/tree/a204c53cae45652d12524132dbb9a2e0ffe8cf78) | `a204c53cae45652d12524132dbb9a2e0ffe8cf78` | MIT for project-authored code; its vendored StatLean components retain Apache-2.0 |
 | [mathlib](https://github.com/leanprover-community/mathlib4/tree/fabf563a7c95a166b8d7b6efca11c8b4dc9d911f) | `fabf563a7c95a166b8d7b6efca11c8b4dc9d911f` | Apache-2.0 |
 
-Lean is pinned to `leanprover/lean4:v4.31.0`. All ten resolved package revisions are in [lake-manifest.json](lake-manifest.json). Dependencies are fetched by Lake; their source and notices are retained in their respective packages. WSC's [upstream provenance ledger](https://github.com/abhmul/weak-simplex-conjecture-lean/blob/a204c53cae45652d12524132dbb9a2e0ffe8cf78/PROVENANCE.md) records its StatLean source closure.
+Lean is pinned to `leanprover/lean4:v4.31.0`. [lake-manifest.json](lake-manifest.json) records all ten resolved package revisions. Lake fetches the dependencies, and each package retains its own source and notices. WSC's [upstream provenance ledger](https://github.com/abhmul/weak-simplex-conjecture-lean/blob/a204c53cae45652d12524132dbb9a2e0ffe8cf78/PROVENANCE.md) records the upstream source of each StatLean file that WSC vendors.
 
 ## Adapted source in this repository
 
@@ -24,10 +24,10 @@ Lean is pinned to `leanprover/lean4:v4.31.0`. All ten resolved package revisions
 
 Copies of the pinned upstream license texts are included at [LICENSES/WSC-MIT.txt](LICENSES/WSC-MIT.txt) and [LICENSES/Apache-2.0.txt](LICENSES/Apache-2.0.txt). The Apache notice applies to the adapted lemma; it does not assign a new license to the rest of that file.
 
-These adaptations copy narrow proof bodies with attribution. The formalization does not call private upstream declarations by generated names. Gaussian support convexity uses WSC's existing public Prékopa foundation.
+These adaptations copy narrow proof bodies with attribution. The formalization does not call private upstream declarations by generated names (names beginning with `_private.`). Gaussian support convexity, the convexity of $1/h$ for the Gaussian mass $h(b)$ of a polyhedral region with offsets $b$ (the paper's Section 5.2), uses WSC's existing public Prékopa foundation (`WeakSimplex.isLogConcave_lintegral_right`).
 
 ## Verification and development records
 
-[The provenance review](docs/work-packages/WP25-provenance-review.md) and its [machine-readable receipt](checks/release/provenance.json) record original-input hashes, exact dependency revisions, license checks, and source comparisons. The manifest distinguishes original inputs from the two subsequently implemented probes. Historical receipts are preserved, including original paths and failed experiments.
+[The provenance review](docs/work-packages/WP25-provenance-review.md) and its [machine-readable receipt](checks/release/provenance.json) record original-input hashes, exact dependency revisions, license checks, and source comparisons. The provenance receipt distinguishes the original inputs from the two probes implemented afterward. Historical receipts are preserved, including original paths and failed experiments.
 
-The development used AI-assisted implementation and review, with file ownership and compiler evidence retained in [the package cards](docs/work-packages/). These records document the implementation process and do not stand in for the Lean proofs or external peer review.
+The development used AI-assisted implementation and review. [The package cards](docs/work-packages/) retain the file ownership and compiler evidence. These records document the implementation process. They do not stand in for the Lean proofs or for external peer review.

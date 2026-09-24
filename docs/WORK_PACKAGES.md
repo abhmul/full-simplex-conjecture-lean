@@ -2,7 +2,7 @@
 
 The initial graph had 26 packages (WP00–WP25). Actual importing consumers justified extracting the generic input-coordinate calculus (WP26) and vector-domain Peano bridge (WP27), so the concrete singular probe could close before universal threshold calculus. The count is neither a quota nor a limit. Refine package size when compiler evidence warrants it; preserve mathematical contracts and record changed dependencies.
 
-All 28 packages are integrated. The exact public comparison, positive-threshold equality/strictness and actual Gaussian event/maximum wrappers passed independent statement review, warning-clean full/root builds, fresh transitive axiom auditing and artifact-free source reconstruction. See RELEASE_AUDIT.md for source identity and receipts; RESUME.md preserves the historical travel checkpoint. Publication and external acceptance remain separate.
+All 28 packages are integrated. The exact public comparison, positive-threshold equality/strictness and actual Gaussian event/maximum wrappers passed independent statement review, warning-clean full/root builds, fresh transitive axiom auditing and artifact-free source reconstruction. See RELEASE_AUDIT.md for source identity and receipts; RESUME.md preserves the historical travel checkpoint. Journal publication and external acceptance remain separate; the paper is arXiv:2609.28452.
 
 | Package | Responsibility | Dependencies |
 | --- | --- | --- |

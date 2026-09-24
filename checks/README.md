@@ -1,28 +1,28 @@
-# Checks and retained evidence
+# Checks and recorded evidence
 
-Run the maintained suite with:
+Run the verification suite with:
 
 ```bash
 python3 scripts/verify_release.py --evidence "$(mktemp -d)/evidence"
 ```
 
-Run this from the repository root after fetching its pinned dependencies. See [building instructions](../docs/BUILDING.md) for the complete setup.
+Run it from the repository root after fetching the pinned dependencies. [BUILDING.md](../docs/BUILDING.md) gives the complete setup.
 
-## Current verification
+## Current checks
 
-- [IndependentStatements.lean](release/IndependentStatements.lean) checks the public results against expanded Gaussian-event statements.
-- [FSC/Audit.lean](../FSC/Audit.lean) prints the transitive axioms of the public endpoints and critical supporting declarations.
-- The `wp*/` consumers and [FSCProbes/](../FSCProbes/) exercise singular, redundant, tied, empty, and other boundary cases. The complete coverage list is maintained in [verify_release.py](../scripts/verify_release.py).
-- [fixtures/](fixtures/) calibrates the audit tool. `AuditRejected.lean` deliberately contains a custom axiom and must be rejected. It is not imported by the production library.
+- [IndependentStatements.lean](release/IndependentStatements.lean) checks the public theorems against restatements in which the Gaussian events are written out.
+- [FSC/Audit.lean](../FSC/Audit.lean) prints the axioms, including indirect dependencies, of the public theorems and of key supporting declarations.
+- The files in the `wp*/` directories (named after the work packages in [docs/work-packages/](../docs/work-packages/)) and in [FSCProbes/](../FSCProbes/) test singular, redundant, tied, empty, and other boundary cases. [verify_release.py](../scripts/verify_release.py) defines the complete list of files that the suite checks.
+- [fixtures/](fixtures/) calibrates the axiom checker. The file `AuditRejected.lean` contains a custom axiom on purpose, and the checker must reject it. The production library does not import it.
 
-## Historical evidence
+## Recorded evidence
 
-[The acceptance report](../docs/RELEASE_AUDIT.md) identifies the certified source commit and explains these receipts:
+[The verification report](../docs/RELEASE_AUDIT.md) identifies the certified commit and explains these receipts:
 
 | Directory | Evidence |
 | --- | --- |
-| [release/clean-source/](release/clean-source/) | Artifact-free source reconstruction and original regression suite |
+| [release/clean-source/](release/clean-source/) | The rebuild from scratch (artifact-free source reconstruction) and the original regression suite |
 | [release/clean-adapters/](release/clean-adapters/) | Additional adapter audits against the same clean source |
-| [release/final-runner-integration/](release/final-runner-integration/) | Consolidated verification runner with all 30 regression files |
+| [release/final-runner-integration/](release/final-runner-integration/) | A run of the combined verification suite with all 30 regression files |
 
-Other logs preserve earlier successful checks, failed API experiments, and intentionally rejected audit controls. A failure in a historical log does not identify the status of the current library; consult its package card and the final receipts. Evidence files retain original execution paths and bytes for hash verification. Fresh runs write to a new evidence directory rather than overwriting these records.
+The other logs preserve earlier successful checks, failed API experiments, and audit controls that were rejected on purpose. A failure in a historical log does not show the status of the current library; for that, consult the corresponding work-package card in [docs/work-packages/](../docs/work-packages/) and the final receipts. The evidence files keep their original execution paths and bytes, so their hashes can be verified. New runs write to a new evidence directory instead of overwriting these records.
